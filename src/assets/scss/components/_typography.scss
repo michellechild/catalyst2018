@@ -1,0 +1,75 @@
+p, li {
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(18px);
+  }
+
+  @include breakpoint(large) {
+    // font-size: rem-calc(20px);
+  }
+}
+
+.mega {
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+  @include breakpoint(large){
+    font-size: 3.75rem;
+  }
+}
+
+.display {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.headline {
+  font-weight: 600;
+  text-align: center;
+  color: $white;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.title, %title {
+  text-align: center;
+  color: $white;
+}
+
+.subheader, %subheader {
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+}
+
+.type__bold {
+  font-weight: 600;
+}
+
+.type__italic {
+  font-style: italic;
+}
+
+.primary-color {
+  color: $primary-color;
+}
+
+.secondary-color {
+  color: $secondary-color;
+}
+
+.type__white {
+  color: $white;
+}
+
+%caption{
+  text-align: center;
+  font-size: 95%;
+}

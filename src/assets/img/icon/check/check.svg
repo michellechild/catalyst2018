@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>check</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="check">
+            <circle id="Oval" fill="#50E3C2" cx="75" cy="75" r="75"></circle>
+            <g id="Icon/Check/Solid/Black" transform="translate(38.664596, 38.664596)">
+                <rect id="Rectangle-8" x="0" y="0" width="72.6708075" height="72.6708075"></rect>
+                <path d="M63.1390021,9.88853474 C62.0905066,8.815623 60.3724274,8.815623 59.3240003,9.88853474 L25.4930841,44.5128614 C24.4445887,45.5857731 22.7265095,45.5857731 21.6780823,44.5128614 L13.346532,35.9872945 C12.2980365,34.9143827 10.5799573,34.9143827 9.53153016,35.9872945 L4.41991197,41.2206745 C3.37141651,42.2935862 3.37141651,44.0516742 4.41991197,45.1245161 L21.6785604,62.7822727 C22.7270558,63.8551845 24.445135,63.8551845 25.4935622,62.7822727 L68.2508955,19.0236597 C69.2993909,17.950748 69.2993909,16.19266 68.2508955,15.1198181 L63.1390021,9.88853474 Z" id="Page-1" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
