@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import whatInput from 'what-input';
+var List = require('list.js');
 window.$ = $;
 
 import Foundation from 'foundation-sites';
@@ -10,6 +11,15 @@ import Foundation from 'foundation-sites';
 
 $(document).foundation();
 
+
+$('#chkdiscount').prop( "checked", true );
+$('#tickets_promocode').css( "display", "block" );
+
+var scheduleOptions = {
+  valueNames: [ 'date', 'time', 'track', 'type' ]
+};
+
+var schedule = new List('schedule', scheduleOptions);
 
   // Add smooth scrolling to all links
   $(".interest-form__link").on('click', function(event) {
@@ -33,8 +43,6 @@ $(document).foundation();
       });
     } // End if
   });
-
-
 
 //Parsing HTML Interest Form to JSON for Google Sheets
 $.fn.serializeObject = function()

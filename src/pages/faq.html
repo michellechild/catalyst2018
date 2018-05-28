@@ -1,0 +1,30 @@
+<section class="hero">
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="small-12 cell">
+        <div class="hero__content">
+          <img src="{{root}}assets/img/icon/conversation/conversation.svg" alt="Question" class="hero__icon">
+          <h1 class="display faq__headline">Frequently Asked Questions</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="small-12 cell">
+        <ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+          {{#each faq as |faq i|}}
+          <li class="accordion-item faq__item" data-accordion-item>
+            <a href="#" class="accordion-title faq__title">{{faq.question}}</a>
+            <div class="accordion-content faq__content" data-tab-content>
+              <p class="accordion__text faq__text">{{faq.answer}}</p>
+            </div>
+           </li>
+           {{/each}}
+         </ul>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+.register__org {
+  padding: 4rem 0 6rem 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.register__logo {
+  margin: 1rem auto 2rem auto;
+}
+
+.org__description {
+  max-width: 1000px;
+  margin: 0 auto 1rem auto;
+  text-align: center;
+}
+
+.org__discount-code {
+  text-align: center;
+  margin: 0 auto 1rem auto;
+}
+
+.register__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}

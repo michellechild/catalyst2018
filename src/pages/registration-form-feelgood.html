@@ -1,0 +1,15 @@
+<section>
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="small-12 cell register__form">
+        {{#each crewmember as |crewmember i|}}
+          {{#ifequal crewmember.member 'feelgood'}}
+            <img src="{{root}}assets/img/logo/{{crewmember.member}}.png" class="member-logo register__logo">
+            <h5 class="org__discount-code">Discount Code: <span class="type__bold">{{crewmember.discount-code}}</span></h5>
+            <p class="org__description">{{crewmember.registration-description}}</p>
+          {{/ifequal}}
+        {{/each}}
+        <div id="eventzilla-iframe"></div><script type='text/javascript' src='https://d2poexpdc5y9vj.cloudfront.net/public/js/eventzilla-embedd.js?eventid=2138961455'></script>
+    </div>
+  </div>
+</section>

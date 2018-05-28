@@ -1,0 +1,52 @@
+.menu {
+  display: flex;
+
+  .logo {
+    margin-right: auto;
+  }
+}
+
+.menu .menu__link--white {
+  color: $white;
+}
+
+.menu .menu__link {
+  color: $black;
+  @include opacity-changer(0.5);
+}
+
+.menu li {
+  font-size: 1rem;
+}
+
+.accordion__title {
+  font-weight: 600;
+}
+
+.accordion__text {
+  margin-bottom: 0;
+}
+
+.about__text {
+  font-size: rem-calc(14);
+}
+
+.faq__title {
+  font-size: rem-calc(20);
+  font-weight: 600;
+  padding: 1.5rem 1rem;
+  color: $dark-gray;
+  border: none;
+}
+
+.faq__content {
+  padding: 1.5rem 1rem;
+}
+
+.faq__item {
+  border-bottom: 2px solid $light-gray;
+}
+
+.faq__text {
+  font-size: rem-calc(16);
+}

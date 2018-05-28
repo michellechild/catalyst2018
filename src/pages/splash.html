@@ -1,4 +1,4 @@
-<section class="section hero hero__index">
+<section class="section hero__index">
     {{>header}}
     <div class="grid-container">
       <div class="grid-x">
@@ -7,7 +7,10 @@
             <h1 class="mega type__white">Catalyst 2018</h1>
             <h4 class="headline italic type__white">Level up your leadership. Catalyze your community.</h4>
             <h5 class="title">August 3-6, 2018 - Bryn Athyn, PA</h5>
-            <button class="button primary__button hero__button">Register now!</button>
+            <div class="hero__cta">
+              <h4 class="headline type__white">Interested?</h4>
+              <a class="button hero__button subheader interest-form__link" href="#interest-section">Keep me informed</span></a>
+            </div>
           </div>
         </div>
       </div>
@@ -17,7 +20,7 @@
   <div class="grid-container">
     <div class="grid-x grid-margin-x">
       <div class="small-12 medium-offset-2 medium-8 end cell">
-        <h2 class="display primary-color">The world needs you!</h2>
+        <h1 class="display primary-color">The world needs you!</h1>
         <p class="type__bold">And in order to address the challenges of our generation, it needs you to be <span class="type__italic">enthusiastic</span>, <span class="type__italic">empowered</span>, and <span class="type__italic">exceptional</span>.</p>
         <p>We know that you want to live a vibrant life <span class="type__italic">and</span> make an impact. So, to support you in realizing your highest potential, your organization is collaborating with eleven others to host a three-day leadership retreat designed to:</p>
         <ul class="intro__list">
@@ -95,16 +98,46 @@
         <h3 class="display">Catalyst 2018 is a gathering for members of these organizations</h3>
       </div>
     </div>
-    <div class="grid-x grid-padding-x small-up-2 medium-up-3">
+    <div class="grid-x grid-padding-x small-up-2 medium-up-4">
        {{#each crewmember as | crewmember i| }}
        <div class="cell">
          <div class="card crewmember">
            <a href="{{crewmember.url}}" target="_blank">
-             <img src="../assets/img/logo/{{crewmember.member}}.png" class="member-logo" alt="{{crewmember.member}}">
+             <img src="../assets/img/logo/{{crewmember.member}}.png" alt="{{crewmember.member}}">
             </a>
           </div>
       </div>
       {{/each}}
+    </div>
+  </div>
+</section>
+<section class="section section__interest" id="interest-section">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="small-12 cell interest-form-wrapper">
+        <img src="{{root}}assets/img/icon/megaphone/megaphone.svg" alt="Megaphone" class="interest__graphic">
+        <h1>Stay informed!</h1>
+        <p>Fill out the form below to receive updates on Catalyst 2018.</p>
+        <form id="interest-form" class="interest-form">
+          <label>Full Name
+            <input type="text" name="interest-name">
+          </label>
+          <label>Email Address
+            <input type="text" name="interest-email">
+          </label>
+          <label>Phone Number
+            <input type="text" name="interest-phone">
+          </label>
+          <label>Organization
+            <input type="text" name="interest-affiliate-org">
+          </label>
+          <input type="submit" id="submit-form" value="Submit" class="button primary expanded">
+        </form>
+      </div>
+      <div id="interest-submitted">
+        <img src="{{root}}assets/img/icon/check/check.svg" alt="Check" class="interest__graphic">
+        <h3>Thank you for your interest. We look forward to seeing you in August!</h3>
+      </div>
     </div>
   </div>
 </section>

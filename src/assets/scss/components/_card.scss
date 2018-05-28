@@ -1,0 +1,50 @@
+.card__link {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto 1rem auto;
+}
+
+.card__title {
+  color: $medium-gray;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.card {
+  border: none;
+  max-width: 570px;
+}
+
+@mixin card-color($color){
+  .card__title {
+    color: $color;
+  }
+  .accordion-title:hover, .accordion-title:focus {
+    color: $color;
+  }
+}
+
+.card__feelgood {
+  @include card-color(#70BA72);
+}
+
+.card__nourish {
+  @include card-color(#F05423);
+}
+
+.card__campuskitchensproject {
+  @include card-color(#336600);
+}
+
+.card__swipe {
+  @include card-color(darken(#A2ECD9, 30%));
+}
+
+.card__uptous {
+  @include card-color(#0094bb);
+}
+
+.card__euphrates {
+  @include card-color(#3d9fdc);
+}

@@ -1,0 +1,37 @@
+header {
+  padding: 1rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
+}
+
+.sticky-footer {
+  flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+}
+
+.header__main{
+  background-color: #F2F3F4;
+  overflow-x: hidden;
+}
+
+.section {
+  padding: rem-calc(50px) 0;
+}
+
+
+footer {
+  background-color: $black;
+  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  margin-top: 3rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .logo {
+    margin-right: 0;
+  }
+}

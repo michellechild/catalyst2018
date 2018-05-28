@@ -1,0 +1,108 @@
+.hero {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.hero__index {
+  background: url('../img/geometricbackground.png') center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+.hero__content {
+  position: relative;
+  padding: 3rem 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__faq {
+  flex-direction: row;
+}
+
+.hero__index .hero__content {
+  padding: 6.25rem 0;
+}
+
+@mixin background-left($color1, $color2) {
+  background-image: linear-gradient($color1, $color2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transform: skewY(-4deg);
+  transform-origin: top left;
+}
+
+@mixin background-right($color) {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background-color:$color;
+  transform: skewY(4deg);
+  transform-origin: bottom right;
+}
+
+
+.background-right {
+  @include background-right(#00A5D4);
+}
+
+.background-left{
+  @include background-left(#444B94,#272D70);
+}
+
+// .hero__register-bg {
+//   @include hero__bg2(#00A5D4);
+// }
+//
+// .hero__about-bg {
+//   @include hero__bg2(#00A5D4);
+// }
+//
+// .hero__about-bg2 {
+//   @include hero__bg1(#444B94,#272D70);
+// }
+
+
+
+.hero__icon {
+  margin-bottom: 1rem;
+}
+
+.hero__description {
+  max-width: 750px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 100%;
+  max-width: 100px;
+
+  @include breakpoint(medium) {
+    max-width: 150px;
+  }
+}
+
+.hero__cta {
+  border-top: 1px solid $white;
+  padding-top: 1rem;
+  margin: 1rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__button {
+  margin: 0.5rem auto;
+}

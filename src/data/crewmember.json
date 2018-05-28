@@ -1,66 +1,163 @@
 [
   {
     "member": "feelgood",
-    "url": "http://www.feelgood.org/"
+    "title": "FeelGood",
+    "url": "http://www.feelgood.org/",
+    "registration": "/registration-form-feelgood.html",
+    "participation": true,
+    "about": true,
+    "discount-code": "Email Connor at connor@feelgood.org or text 732-677-6195",
+    "registration-description": "Registration for Catalyst 2018 is $200, however full and partial scholarships are available for students, Board members, and alumni. Email Connor at connor@feelgood.org or text 732-677-6195 to request your scholarship, or speak with your Changemaker Ignitor, and we will send you a discount code. All chapters are given two FULL scholarships to register!",
+    "roots": "FeelGood was founded in 2004 by motivated college students who shared a common vision: that the world's inhabitants are infinitely connected, and we are all responsible for ending extreme poverty throughout the world by 2030. FeelGood's guiding principles are commitment, collaboration, community, empowerment, and love.",
+    "motivation": "We are a movement dedicated to mobilizing the rising generation as global citizens and strategic changemakers. Our daily motivation is rooted in the positive - we believe that by joining efforts we can truly make the changes needed to ensure that the world is safe, inhabitable, sustainable, and nurturing for all.",
+    "youth": "Youth drive FeelGood at every level! We have a dedicated Board of Directors consisting of current students and FeelGood alums who work together to navigate the movement toward success. At every single chapter across the country, young people are leading, empowering others, and creating change."
   },
   {
     "member": "nourish",
-    "url": "http://nourish.org/"
+    "url": "http://nourish.org/",
+    "title": "Nourish International",
+    "registration": "/registration-form-nourish.html",
+    "participation": true,
+    "about": true,
+    "discount-code": "nourish",
+    "registration-description": "The full cost of hosting one participant at Catalyst 2018 is $200, however Nourish is committed to accessibility & we want to remove as many barriers to participation as possible... so use discount code 'nourish' to register for just $25! Also, full & partial travel scholarships are available for students, Board members, & alumni. Please complete this scholarship application form (https://goo.gl/forms/XndkGMG4svmonNmJ2) or email/text JD (jd@nourish.org - 970.443.4349) with questions.",
+    "roots": "Founded by college students 15 years ago, on the principles of community-based partnership, long-term commitment, and  student leadership , Nourish supports and empowers students as they lead social enterprises while also providing them opportunities and resources related to holistic personal growth and development.",
+    "motivation": "We believe our local and global communities face existential challenges and the depth of our “leadership bench” is the key determinant of our ability to effectively address these challenges. In order to build systems and institutions that empower and regenerate rather than exploit and degrade, we support and equip young leaders who prioritize community, compassion, and conscientiousness so they can bring their passions and visions to life in support of positive change for communities.",
+    "youth": "Not only are youth the primary beneficiaries of our programs, students and alumni lead our organization entirely. Our staff (all under 26) is 100% Nourish alumni and a majority of our Board of Directors are current students or alumni."
   },
   {
     "member": "campuskitchensproject",
-    "url": "https://campuskitchens.org/"
+    "title": "Campus Kitchens Project",
+    "url": "https://campuskitchens.org/",
+    "registration": "/registration-form.html",
+    "participation": true,
+    "about": false
   },
   {
     "member": "swipe",
-    "url": "http://www.swipehunger.org/"
+    "url": "http://www.swipehunger.org/",
+    "title": "Swipe Out Hunger",
+    "registration": "/registration-form.html",
+    "participation": true,
+    "about": true,
+    "roots": "Swipe Out Hunger started at UCLA in 2010 when a few friends went into the dining hall, used their meal cards to take away some sandwiches, and delivered them around town. A few months later the team partnered with Dining Services to allow students to donate their extra dining funds to provide meals for their peers and community members in need. Soon, students from over campuses contacted them asking for help replicating the model on their campus. There are currently 40 Swipe Out Hunger campus partners across the U.S., where students have the option to donate unused dining hall money to their food insecure peers and community.",
+    "motivation": "We are excited to be the conduit through with universities can put students' needs are the core of their mission. At UCLA we have only been around for 8 years but our presence has become an institution. So many more universities are out there which presents a huge opportunity to scale. Another thing that motivates us is the fact that very few teams are actively addressing college student hunger at a national scale. There needs to be a national movement so we can shift the norm around the issue.",
+    "youth": "Students have been the driving force behind Swipe Out Hunger's growth. Additionally, our focus on ending student hunger leaves many students' voices at the forefront of our work. Swipe Out Hunger works to end student hunger by activating college students to donate unused meal points to feed their peers and community members in need. The organization operates through a network of campus partners, many of which have a cadre of student leaders working directly with university administrators to develop solutions to campus hunger."
   },
   {
     "member": "challahforhunger",
-    "url": "https://challahforhunger.org/"
+    "url": "https://challahforhunger.org/",
+    "title": "Challah for Hunger",
+    "registration": "/registration-form.html",
+    "participation": false,
+    "about": false
   },
   {
     "member": "thoughtforfood",
-    "url": "https://thoughtforfood.org/"
+    "url": "https://thoughtforfood.org/",
+    "title": "Thought for Food",
+    "registration": "/registration-form.html",
+    "participation": false,
+    "about": false
   },
   {
     "member": "uptous",
-    "url": "http://www.itsuptous.org/"
+    "url": "http://www.itsuptous.org/",
+    "title": "Up to Us",
+    "registration": "/registration-form.html",
+    "participation": true,
+    "about": true,
+    "roots": "Launched in 2012, Up to Us is a rapidly growing, nonpartisan movement of young people who recognize that when it comes to securing their future opportunities, they have no better advocates than themselves. Amid high-profile debates over jobs and the economy, social mobility, healthcare, and tax reform, Up to Us is the only nationwide, campus-based campaign focused on building a sustainable economic and fiscal future for America’s next generation.",
+    "motivation": "Up to Us is a unique program provides emerging leaders a unique nonpartisan platform for facilitating a collaborative dialogue on the country’s most vexing challenges.",
+    "youth": "Young Americans have the most to gain—or lose—in the debate over America’s fiscal future. Some are motivated by a desire to support investments in crucial priorities like education, research and development, and infrastructure. Others simply want to see their hard work pay off with a secure retirement. Across worldviews and backgrounds, however, the growth of Up to Us is fueled by Millennials who recognize how the nation’s fiscal condition shapes their future opportunities. The Up to Us movement draws on emerging leaders from a wide variety of educational, cultural, geographic and academic backgrounds. From pre-med to political science, from commuter colleges to large private and public universities, and from Alaska to Florida, Up to Us isn’t just a movement of econ wonks and aspiring politicos (though it’s got plenty of those, too). It’s a diverse movement of young, engaged Americans united to build the economic future they want to see."
   },
   {
     "member": "via",
-    "url": "https://viaprograms.org/"
+    "url": "https://viaprograms.org/",
+    "title": "Via",
+    "registration": "/registration-form.html",
+    "participation": true,
+    "about": false
   },
   {
     "member": "milleniumcampusnetwork",
-    "url": "https://www.mcnpartners.org/"
+    "url": "https://www.mcnpartners.org/",
+    "title": "Millenium Campus Network",
+    "registration": "/registration-form.html",
+    "participation": false,
+    "about": false
   },
   {
     "member": "foodrecoverynetwork",
-    "url": "https://www.foodrecoverynetwork.org/"
+    "url": "https://www.foodrecoverynetwork.org/",
+    "title": "Food Recovery Network",
+    "registration": "/registration-form.html",
+    "participation": true,
+    "about": false
   },
   {
     "member": "thehungerproject",
-    "url": "http://www.thp.org/"
+    "url": "http://www.thp.org/",
+    "title": "The Hunger Project",
+    "registration": "/registration-form.html",
+    "participation": false,
+    "about": false
   },
   {
     "member": "campuscompact",
-    "url": "https://compact.org/"
+    "url": "https://compact.org/",
+    "title": "Campus Compact",
+    "registration": "/registration-form.html",
+    "participation": false,
+    "about": false
   },
   {
     "member": "euphrates",
-    "url": "https://euphrates.org/"
+    "url": "https://euphrates.org/",
+    "title": "Euphrates",
+    "registration": "/registration-form.html",
+    "participation": true,
+    "about": true,
+    "roots": "While serving as a counterinsurgency analyst in Iraq following 9/11, Euphrates Founder, Janessa Gans Wilder, experienced a moment of deep calm and peace amidst the conflict and chaos while sitting on the banks of the Euphrates River. It has since become a powerful symbol of light and hope in dark places—a life-giving force in the desert. The Euphrates Institute seeks to imbibe the spirit of the river in amplifying the work of visionaries and connecting peacemakers around the world.",
+    "motivation": "The world's problems are global and complex in nature and require each person's participation to solve them. Yet we may often feel helpless and paralyzed in the face of them...and disconnected from each other and the planet. On top of this, we live in a country where war is a trillion-dollar industry and peacebuilders struggle to advance their causes and gain support. We are motivated to shift the narrative, from one of hopelessness, disconnection and conflict to one where each of us feels inspired, connected and empowered to be positive contributors and peacebuilders, not warmakers.",
+    "youth": "We have 30 Chapters of young people around the world who are actively involved in their communities to turn 'others' into brothers, and to inform, inspire and transform. Each of them is a visionary and they are the real engine behind our work as they continue to further our mission. Youth are the future and it is our hope that by being active members of the Euphrates Insitute they feel empowered as global citizens, connected to each other and hopeful that change is possible!"
   },
   {
     "member": "movementofyouth",
-    "url": "http://movementofyouth.org/"
+    "url": "http://movementofyouth.org/",
+    "title": "Movement of Youth",
+    "registration": "/registration-form.html",
+    "participation": true,
+    "about": false
   },
   {
     "member": "cofed",
-    "url": "https://www.cofed.coop/"
+    "url": "https://www.cofed.coop/",
+    "title": "CoFED",
+    "registration": "/registration-form.html",
+    "participation": true,
+    "about": false
   },
   {
     "member": "juniorenterprise",
-    "url": "https://www.juniorenterprise.us/"
+    "url": "https://www.juniorenterprise.us/",
+    "title": "Junior Enterprise",
+    "registration": "/registration-form.html",
+    "participation": true,
+    "about": false,
+    "roots": "Junior Enterprise (JE) is a student-run, non-profit organization that provides services to medium and small local businesses. We were started 50 years ago in France and have spread all around the world. We provide unique entrepreneurial experience while benefiting the local community, Junior Entrepreneurs acquire essential soft and hard skills that are incredibly valuable in industry, empowering them to pursue successful and purposeful careers after graduation.",
+    "motivation": "JE forms better conscious leaders out of college by giving members real entrepreneurial experience. By empowering Junior Entrepreneurs, we believe in enabling them to pursue their career dreams and make a greater impact wherever they choose to go after graduation.",
+    "youth": "We are a completely student-run network. Every aspect is run by students and executed by students."
+  },
+  {
+    "member": "eyetoeye",
+    "url": "https://eyetoeyenational.org/",
+    "title": "Eye to Eye",
+    "registration": "/registration-form.html",
+    "participation": true,
+    "about": false,
+    "roots": "As it often is with big ideas that have the power to change the world, Eye to Eye happened almost by accident. In 1998, a group of college students with learning and attention issues from Brown University sat down with similarly-labeled elementary school students from Fox Point Elementary in Providence, RI. The Brown students called themselves Project Eye-to-Eye, the name for their public service project. The program had one simple goal: give these younger students hope.",
+    "motivation": "Create a world in which people with Learning Differences and ADHD are fully accepted, valued, and respected -- not just by society, but also by themselves.",
+    "youth": "Youth will always be the cornerstone of our organization. Our Mentors are college and high school students with language/math based learning disabilities and/or ADHD. We empower students to empower each other."
   }
 ]

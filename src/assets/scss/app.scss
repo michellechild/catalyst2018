@@ -52,7 +52,14 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+@import 'components/sections';
 @import 'components/typography';
+@import 'components/hero';
+@import 'components/menu';
 @import 'components/icons';
 @import 'components/splash';
 @import 'components/popup';
+@import 'components/table';
+@import 'components/modal';
+@import 'components/register';
+@import 'components/card';

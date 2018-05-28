@@ -1,3 +1,11 @@
+ @mixin opacity-changer($default) {
+  opacity: $default;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
 p, li {
 
   @include breakpoint(medium) {
@@ -11,25 +19,33 @@ p, li {
 
 .mega {
   font-weight: bold;
-  letter-spacing: 0.1em;
-  color: $white;
+  letter-spacing: 2px;
   text-transform: uppercase;
   text-align: center;
-  @include breakpoint(large){
+  @include breakpoint(large) {
     font-size: 3.75rem;
   }
 }
 
 .display {
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 1.25rem;
 }
 
+.button {
+  font-weight: 600;
+  font-size: rem-calc(16);
+}
+
 .headline {
+  color: $medium-gray;
   font-weight: 600;
   text-align: center;
-  color: $white;
+}
+
+.faq__headline {
+  color: #444B94;
 }
 
 .italic {
@@ -41,12 +57,11 @@ p, li {
   color: $white;
 }
 
-.subheader, %subheader {
+.subhead, %subhead {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-align: center;
-  color: $white;
 }
 
 .type__bold {

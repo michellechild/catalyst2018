@@ -15,7 +15,10 @@
   <body>
 
     {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
-    {{> body}}
+    <div class="sticky-footer">
+      {{#unlesspage 'index' 'splash'}}{{>header}}{{/unlesspage}}
+      {{> body}}
+    </div>
     {{> footer}}
     <script src="{{root}}assets/js/app.js"></script>
   </body>
