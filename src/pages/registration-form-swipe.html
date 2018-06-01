@@ -1,15 +1,15 @@
-<section>
-  <div class="grid-container">
-    <div class="grid-x">
-      <div class="small-12 cell register__form">
-        {{#each crewmember as |crewmember i|}}
-          {{#ifequal crewmember.member 'swipe'}}
-            <img src="../assets/img/logo/{{crewmember.member}}.png" class="member-logo register__logo">
-            <h5 class="org__discount-code">Discount Code: <span class="type__bold">{{crewmember.discount-code}}</span></h5>
-            <p class="org__description">{{crewmember.registration-description}}</p>
-          {{/ifequal}}
-        {{/each}}
-        <div id="eventzilla-iframe"></div><script type='text/javascript' src='https://d2poexpdc5y9vj.cloudfront.net/public/js/eventzilla-embedd.js?eventid=2138961455'></script>
+---
+layout: registration
+---
+{{#each crewmember as |crewmember i|}}
+  {{#ifequal crewmember.member 'swipe'}}
+  <div class="grid-x grid-margin-x registration-customization">
+    <div class="cell shrink">
+      <img src="{{root}}assets/img/logo/{{crewmember.member}}.png" class="member-logo register__logo">
+    </div>
+    <div class="cell auto">
+      <p class="org__description">Registration for Catalyst 2018 is $200, however Swipe Out Hunger can provide each team with a registration discount code. If you would like to find out if you are eligible for a discount code or have any additional questions about the retreat, you can contact Marissa at <a href="mailto:>marissa@swipehunger.org">>marissa@swipehunger.org</a>.</p>
     </div>
   </div>
-</section>
+  {{/ifequal}}
+{{/each}}

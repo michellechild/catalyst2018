@@ -4,14 +4,6 @@
   position: relative;
 }
 
-.hero__index {
-  background: url('../img/geometricbackground.png') center center no-repeat;
-  background-size: cover;
-  width: 100%;
-  overflow-x: hidden;
-  padding: 0;
-}
-
 .hero__content {
   position: relative;
   padding: 3rem 0;
@@ -21,12 +13,33 @@
   justify-content: center;
 }
 
-.hero__faq {
-  flex-direction: row;
+.hero__index {
+  background: url('../img/geometricbackground.png') center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  color: $white;
+  text-align: center;
+
+  .hero__content {
+    padding: 6.25rem 0;
+  }
 }
 
-.hero__index .hero__content {
-  padding: 6.25rem 0;
+.hero__schedule {
+  color: $white;
+  text-align: center;
+
+  .hero__content {
+    @include breakpoint (medium){
+      padding-bottom: 5rem;
+    }
+  }
+}
+
+.hero__faq {
+  flex-direction: row;
 }
 
 .hero__icon {
@@ -73,23 +86,23 @@
   transform-origin: top left;
 }
 
-@mixin background-right($color) {
+@mixin background-right($color1, $color2) {
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
   width: 100%;
-  background-color:$color;
+  background-image: linear-gradient($color1, $color2);
   transform: skewY(4deg);
   transform-origin: bottom right;
 }
 
 
 .background-right {
-  @include background-right(get-color(brand-blue));
+  @include background-right(#272D70, get-color(secondary));
 }
 
 .background-left{
-  @include background-left(get-color(brand-purple),#272D70);
+  @include background-left(get-color(secondary),#272D70);
 }

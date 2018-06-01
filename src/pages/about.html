@@ -12,33 +12,33 @@
     </div>
   </div>
 </section>
-<section class="section__crew-org">
+<section class="section__about">
   <div class="grid-container">
-    <div class="grid-x grid-margin-x medium-up-2 large-up-3">
+    <div class="grid-x grid-margin-x medium-up-2">
      {{#each crewmember as | crewmember i| }}
        {{#if crewmember.about}}
-         <div class="cell card card__about card__{{crewmember.member}}">
-          <a href="{{crewmember.url}}" target="_blank" class="card__link">
+         <div class="cell about__{{crewmember.member}}">
+          <a href="{{crewmember.url}}" target="_blank" class="about__link">
             <img src="../assets/img/logo/{{crewmember.member}}.png" class="member-logo" alt="{{crewmember.member}}">
-            <h4 class="card__title">{{crewmember.title}}</h4>
+            <h4 class="about__title">{{crewmember.title}}</h4>
           </a>
           <ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
               <li class="accordion-item" data-accordion-item>
                 <a href="#" class="accordion-title">What are your roots?</a>
                  <div class="accordion-content" data-tab-content>
-                   <p class="accordion__text about__text">{{crewmember.roots}}</p>
+                   <p class="accordion__text text__small">{{crewmember.roots}}</p>
                  </div>
               </li>
               <li class="accordion-item" data-accordion-item>
                 <a href="#" class="accordion-title">What motivates your organization's work?</a>
                  <div class="accordion-content" data-tab-content>
-                   <p class="accordion__text about__text">{{crewmember.motivation}}</p>
+                   <p class="accordion__text text__small">{{crewmember.motivation}}</p>
                  </div>
               </li>
               <li class="accordion-item" data-accordion-item>
                 <a href="#" class="accordion-title">How do youth drive your organization?</a>
                  <div class="accordion-content" data-tab-content>
-                   <p class="accordion__text about__text">{{crewmember.youth}}</p>
+                   <p class="accordion__text text__small">{{crewmember.youth}}</p>
                  </div>
               </li>
             </ul>

@@ -1,31 +1,56 @@
 #ifeventzilla {
   min-height: 1000px;
+
+  @include breakpoint(medium){
+    min-height: auto;
+  }
 }
 
-.register__org {
-  padding: 4rem 0 6rem 0;
-  display: flex;
-  flex-direction: column;
-  position: relative;
+.register-wizard {
+  margin-bottom: 3rem;
+
+  a {
+    color: $black;
+  }
+}
+
+.register__headline {
+  margin-bottom: 3rem;
 }
 
 .register__logo {
-  margin: 1rem auto 2rem auto;
+  margin-bottom: 1rem;
+  display: flex;
 }
 
-.org__description {
-  max-width: 1000px;
-  margin: 0 auto 1rem auto;
+.wizard__step {
+  border: darken($light-gray, 5%) 1px solid;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  align-items: center;
+
+  &.active {
+    background-color: darken($light-gray, 5%);
+  }
 }
 
-.org__discount-code {
-  text-align: center;
-  margin: 0 auto 1rem auto;
+.wizard__icon {
+  margin-bottom: 0.5rem;
+  max-width: 50px;
+}
+
+.registration-customization {
+  margin: 0 auto;
+  max-width: 970px;
+}
+
+.org__description, .org__discount-code {
+  margin-bottom: 1rem;
 }
 
 .register__form {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
 }

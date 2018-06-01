@@ -1,16 +1,17 @@
-<section>
-  <div class="grid-container">
-    <div class="grid-x">
-      <div class="small-12 cell register__form">
-        {{#each crewmember as |crewmember i|}}
-          {{#ifequal crewmember.member 'nourish'}}
-            <img src="../assets/img/logo/{{crewmember.member}}.png" class="member-logo register__logo">
-            <h5 class="org__discount-code">Discount Code: <span class="type__bold">{{crewmember.discount-code}}</span></h5>
-            <p class="org__description">The full cost of hosting one participant at Catalyst 2018 is $200, however Nourish is committed to accessibility & we want to remove as many barriers to participation as possible... so use discount code 'nourish' to register for just $25!</p>
-            <p class="org__description">Also, full & partial travel scholarships are available for students, Board members, & alumni. Please complete this <a href="https://goo.gl/forms/XndkGMG4svmonNmJ2">scholarship application form</a> or email/text JD <a href="mailto:jd@nourish.org">jd@nourish.org</a> - <a href="tel:970.443.4349">970.443.4349</a> with questions.</p>
-          {{/ifequal}}
-        {{/each}}
-        <div id="eventzilla-iframe"></div><script type='text/javascript' src='https://d2poexpdc5y9vj.cloudfront.net/public/js/eventzilla-embedd.js?eventid=2138961455'></script>
+---
+layout: registration
+---
+
+{{#each crewmember as |crewmember i|}}
+  {{#ifequal crewmember.member 'nourish'}}
+  <div class="grid-x grid-margin-x registration-customization">
+    <div class="cell shrink">
+      <img src="../assets/img/logo/{{crewmember.member}}.png" class="member-logo register__logo">
+    </div>
+    <div class="cell auto">
+      <p class="org__description">The full cost of hosting one participant at Catalyst 2018 is $200, however Nourish is committed to accessibility & we want to remove as many barriers to participation as possible... <span class="bold">so use discount code 'nourish' to register for just $25!</span>.</p>
+      <p class="org__description">Also, full & partial travel scholarships are available for students, Board members, & alumni. Please complete this <a href="https://goo.gl/forms/XndkGMG4svmonNmJ2">scholarship application form</a> or email/text JD <a href="mailto:jd@nourish.org">jd@nourish.org</a> - <a href="tel:970.443.4349">970.443.4349</a> with questions.</p>
     </div>
   </div>
-</section>
+  {{/ifequal}}
+{{/each}}

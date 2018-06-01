@@ -4,10 +4,10 @@
       <div class="grid-x">
         <div class="small-12 cell">
           <div class="hero__content">
-            <h1 class="mega type__white">Catalyst 2018</h1>
-            <h4 class="headline italic type__white">Level up your leadership. Catalyze your community.</h4>
-            <h5 class="title type__white">August 3-6, 2018 - Bryn Athyn, PA</h5>
-            <button data-open="modal-register" class="button primary__button hero__button">Register now!</button>
+            <h1 class="mega">Catalyst 2018</h1>
+            <h4 class="bold italic">Level up your leadership. Catalyze your community.</h4>
+            <h5>August 3-6, 2018 - Bryn Athyn, PA</h5>
+            <a href="/register-organization.html"  class="button primary__button hero__button">Register now!</a>
           </div>
         </div>
       </div>
@@ -17,9 +17,9 @@
   <div class="grid-container">
     <div class="grid-x grid-margin-x">
       <div class="small-12 medium-offset-2 medium-8 end cell">
-        <h2 class="display primary-color">The world needs you!</h2>
-        <p class="type__bold">And in order to address the challenges of our generation, it needs you to be <span class="type__italic">enthusiastic</span>, <span class="type__italic">empowered</span>, and <span class="type__italic">exceptional</span>.</p>
-        <p>We know that you want to live a vibrant life <span class="type__italic">and</span> make an impact. So, to support you in realizing your highest potential, your organization is collaborating with eleven others to host a three-day leadership retreat designed to:</p>
+        <h2 class="display primary">The world needs you!</h2>
+        <p class="bold">And in order to address the challenges of our generation, it needs you to be <span class="italic">enthusiastic</span>, <span class="italic">empowered</span>, and <span class="italic">exceptional</span>.</p>
+        <p>We know that you want to live a vibrant life <span class="italic">and</span> make an impact. So, to support you in realizing your highest potential, your organization is collaborating with eleven others to host a three-day leadership retreat designed to:</p>
         <ul class="intro__list">
           <li class="intro__list-item">
             <img src="{{root}}assets/img/icon/tools/tools-outline-black.svg" alt="tools" class="icon--left icon__default">
@@ -37,85 +37,18 @@
     </div>
   </div>
 </section>
-<!-- <section class="section">
-  <div class="grid-x grid-margin-x">
-    <div class="small-6 cell">
-      <h2 class="display secondary-color">Registration is Live!</h2>
-      <button class="primary__button">Register Now</button>
-      <h5 class="registration__subhead">Take Action:</h5>
-    </div>
-    <div class="small-6 cell">
-      <h2 class="display secondary-color">Schedule</h2>
-      <button class="primary__button">Register Now</button>
-      <h5 class="registration__subhead">Take Action:</h5>
-    </div>
-  </div>
-</section> -->
-    <!-- <section class="section section__registration">
-        <div class="grid-x grid-margin-x">
-          <div class="small-6 cell">
-            <h2 class="display secondary-color">Registration is Live!</h2>
-            <button class="primary__button">Register Now</button>
-            <h5 class="registration__subhead">Take Action:</h5>
-          </div>
-        </div>
-      </section>
-      <div class="small-6 medium-3 cell">
-        <div class="registration__item">
-          <img src="{{root}}assets/img/icon/calendar/calendar-outline-white.svg" alt="Calendar" class="registration__icon">
-          <h5 class="registration__title">Plan ahead!</h5>
-          <p class="registration__description">Tell your summer employer you’ll be leveling up your leadership August 3rd-6th.</p>
-        </div>
-      </div>
-      <div class="small-6 medium-3 cell">
-        <div class="registration__item">
-          <img src="{{root}}assets/img/icon/ticket/ticket-outline-white.svg" alt="Calendar" class="registration__icon">
-          <h5 class="registration__title">Save the Date!</h5>
-          <div title="Add to Calendar" class="addeventatc">
-              Add to Calendar
-              <span class="start">08/03/2018 09:00 AM</span>
-              <span class="end">08/06/2018 12:00 PM</span>
-              <span class="timezone">America/New_York</span>
-              <span class="title">Catalyst 2018</span>
-              <span class="description">A leadership summit hosted by the Crew Youth Collaborative</span>
-              <span class="location">Bryn Athyn, PA</span>
-          </div>
-        </div>
-      </div>
-      <div class="small-6 medium-3 cell">
-        <div class="registration__item">
-          <img src="{{root}}assets/img/icon/error/error-outline-white.svg" alt="Calendar" class="registration__icon">
-          <h5 class="registration__title">Unable to attend?</h5>
-          <p class="registration__description">Find an alternate to ensure your organization is represented.</p>
-        </div>
-      </div>
-      <div class="small-6 medium-3 cell">
-        <div class="registration__item">
-          <img src="{{root}}assets/img/icon/share/share-outline-white.svg" alt="Calendar" class="registration__icon">
-          <h5 class="registration__title">Spread the word!</h5>
-          <p class="registration__description">
-            <a class="registration__link copy-to-clipboard" data-type="attribute" data-attr-name="data-clipboard-text" data-model="couponCode" data-clipboard-text="http://catalyst2018.org">Share this link
-            <span class="popuptext" id="link__tooltip">Link copied!</span>
-            </a>
-
-            with your friends and on your social media channels!</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
 <section class="section section__crewmembers">
   <div class="grid-container">
     <div class="grid-x grid-margin-x">
       <div class="small-12 cell">
-        <h3 class="display">Catalyst 2018 is a gathering for members of these organizations</h3>
+        <h4 class="headline crewmember__headline">Catalyst 2018 is a gathering for members of these organizations:</h4>
       </div>
     </div>
-    <div class="grid-x grid-padding-x small-up-2 medium-up-3">
+    <div class="grid-x grid-padding-x small-up-4 medium-up-6">
        {{#each crewmember as | crewmember i| }}
        <div class="cell">
-         <div class="card crewmember">
-           <a href="{{crewmember.url}}" target="_blank">
+         <div class="crewmember-logo">
+           <a href="{{crewmember.url}}" target="_blank" class="crewmember-logo__link">
              <img src="../assets/img/logo/{{crewmember.member}}.png" class="member-logo" alt="{{crewmember.member}}">
             </a>
           </div>

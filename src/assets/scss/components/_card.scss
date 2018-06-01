@@ -1,20 +1,3 @@
-.card__link {
-  display: flex;
-  flex-direction: column;
-  margin: 2rem auto 1rem auto;
-}
-
-.card__title {
-  color: $medium-gray;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 1.5rem;
-}
-
-.card__about {
-  border: none;
-  max-width: 570px;
-}
 
 .card__timeline {
   background-color: $white;
@@ -33,8 +16,13 @@
   }
 
   + .card__timeline {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    @include breakpoint(large) {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
   }
 }
 
@@ -42,41 +30,8 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  p {
+  p:not(.theme__title) {
     margin-right: auto;
     margin-bottom: 0;
   }
-}
-
-@mixin card-color($color){
-  .card__title {
-    color: $color;
-  }
-  .accordion-title:hover, .accordion-title:focus {
-    color: $color;
-  }
-}
-
-.card__feelgood {
-  @include card-color(#70BA72);
-}
-
-.card__nourish {
-  @include card-color(#F05423);
-}
-
-.card__campuskitchensproject {
-  @include card-color(#336600);
-}
-
-.card__swipe {
-  @include card-color(darken(#A2ECD9, 30%));
-}
-
-.card__uptous {
-  @include card-color(#0094bb);
-}
-
-.card__euphrates {
-  @include card-color(#3d9fdc);
 }

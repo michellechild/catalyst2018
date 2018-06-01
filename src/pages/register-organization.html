@@ -1,0 +1,20 @@
+{{> registration-wizard}}
+<div class="grid-container">
+  <div class="grid-x grid-margin-x">
+    <div class="small-12 cell">
+      <h5 class="subhead">Step 1 of 3</h5>
+      <h3 class="register__headline headline">Choose your organization</h3>
+        <div class="grid-x grid-padding-x small-up-2 medium-up-3 large-up-4">
+         {{#each crewmember as | crewmember i| }}
+         <div class="cell">
+           <div class="crewmember-logo">
+             <a href="{{crewmember.registration}}" class="crewmember-logo__link">
+               <img src="../assets/img/logo/{{crewmember.member}}.png" class="member-logo" alt="{{crewmember.member}}">
+              </a>
+            </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>

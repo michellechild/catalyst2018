@@ -1,0 +1,69 @@
+.about__link {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0 1rem 0;
+}
+
+.about__title {
+  color: $dark-gray;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+@mixin about-color($color){
+  .about__title {
+    color: $color;
+  }
+  .accordion-title:hover, .accordion-title:focus {
+    color: $color;
+  }
+}
+
+.about__feelgood {
+  @include about-color(#70BA72);
+}
+
+.about__nourish {
+  @include about-color(#F05423);
+}
+
+.about__campuskitchensproject {
+  @include about-color(#336600);
+}
+
+.about__swipe {
+  @include about-color(darken(#A2ECD9, 30%));
+}
+
+.about__uptous {
+  @include about-color(#0094bb);
+}
+
+.about__euphrates {
+  @include about-color(#3d9fdc);
+}
+
+.faq__headline {
+  color: get-color(brand-purple);
+}
+
+.faq__title {
+  font-size: rem-calc(20);
+  font-weight: 600;
+  padding: 1.5rem 1rem;
+  color: $dark-gray;
+  border: none;
+
+  &:hover, &:focus {
+    color: get-color(brand-purple);
+  }
+}
+
+.faq__content {
+  padding: 1.5rem 1rem;
+}
+
+.faq__item {
+  border-bottom: 2px solid $light-gray;
+}

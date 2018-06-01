@@ -1,22 +1,4 @@
 
-
-//Intro
-
-.section__intro {
-  background-color: $light-gray;
-}
-
-.intro__list {
-  list-style-type: none;
-  margin-left: 0;
-}
-
-.intro__list-item {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 1rem;
-}
-
 //Registration
 
 .section__registration {
@@ -62,15 +44,6 @@
   color: $white;
 }
 
-//Crew Members
-.crewmember {
-  border: none;
-
-  a {
-    margin: 1rem auto;
-  }
-
-}
 
 //Interest Form
 

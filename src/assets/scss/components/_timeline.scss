@@ -1,3 +1,47 @@
+.schedule-container {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.schedule__headline {
+  color: darken(get-color(secondary), 20%);
+  font-weight: 600;
+  // text-transform: uppercase;
+  text-align: center;
+  // letter-spacing: 2px;
+  margin-bottom: 2rem;
+  font-size: 32px;
+
+  @include breakpoint (large) {
+    font-size: 22px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+
+@mixin track-type($color) {
+  color: $color;
+  font-weight: 600;
+
+  .card-divider {
+    background-color: $color;
+    color: $white;
+  }
+}
+
+@mixin hour-interval($hour) {
+  height: 150px;
+
+  @include breakpoint(large) {
+    height: calc((200px * #{$hour}) - 0.5rem);
+  }
+}
+
+.timeline__header{
+  margin-bottom: 1.5rem;
+}
+
 .timeline__body {
   @include breakpoint(large) {
     height: 3300px;
@@ -7,7 +51,7 @@
   }
 }
 
-.friday {
+#friday {
   @include breakpoint(large) {
     margin-top: 1400px;
   }
@@ -19,14 +63,8 @@
   margin-top: -10px;
 }
 
-@mixin track-type($color) {
-  color: $color;
-  font-weight: 600;
-
-  .card-divider {
-    background-color: $color;
-    color: $white;
-  }
+.theme__title + .theme__title {
+  margin-left: 1rem;
 }
 
 .theme  {
@@ -41,17 +79,15 @@
   @include track-type(get-color(brand-purple));
 }
 
-@mixin hour-interval($hour) {
-  height: calc((200px * #{$hour}) - 0.5rem);
-}
-
-
 .half-hour {
   @include hour-interval(0.5);
 
-  .card-divider {
-    padding: 0.25rem 1rem;
+  @include breakpoint(large) {
+    .card-divider {
+      padding: 0.25rem 1rem;
+    }
   }
+
 }
 
 .hour {
@@ -68,4 +104,8 @@
 
 .two-hours-half {
   @include hour-interval(2.5);
+}
+
+.arrivals {
+  @include hour-interval(3.5);
 }

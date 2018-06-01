@@ -1,0 +1,37 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalyst 2018</title>
+    <link rel="shortcut icon" href="{{root}}favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Exo:400,400i,600,600i" rel="stylesheet">
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+  </head>
+  <body>
+
+    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+    <div class="sticky-footer">
+      {{>header}}
+      {{> registration-wizard}}
+      <section>
+        <div class="grid-container">
+          <div class="grid-x">
+            <div class="small-12 cell register__form">
+              <h5 class="subhead">Step 2 of 3</h5>
+              <h3 class="register__headline headline">Select ticket type, apply discount codes</h3>
+              {{> body}}
+              <div id="eventzilla-iframe"></div><script type='text/javascript' src='https://d2poexpdc5y9vj.cloudfront.net/public/js/eventzilla-embedd.js?eventid=2138961455'></script>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    {{> footer}}
+    <script src="{{root}}assets/js/app.js"></script>
+  </body>
+</html>

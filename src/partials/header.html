@@ -1,42 +1,17 @@
 <header class="{{#unlesspage 'index' 'splash'}}header__main{{/unlesspage}}">
   <div class="grid-x grid-margin-x">
     <div class="small-12 cell">
-      <ul class="menu">
-        <li class="logo"><a href="/index.html">
-          {{#ifpage 'index' 'splash'}}<img src="{{root}}assets/img/logo/cyc-logo-white.svg" alt="Logo">{{/ifpage}}
-          {{#unlesspage 'index' 'splash'}}<img src="{{root}}assets/img/logo/cyc-logo-full-color.svg" alt="Logo">{{/unlesspage}}</a></li>
-        <li><a href="/index.html" class="subhead menu__link">Home</a></li>
-        <li><a href="/about.html" class="subhead menu__link">About</a></li>
-        <!-- <li><a href="/program.html" class="subhead menu__link">Program</a></li> -->
-        <!-- <li><a href="/schedule.html" class="subhead menu__link">Schedule</a></li> -->
-        <li><a href="/faq.html" class="subhead menu__link">FAQ</a></li>
-        <li><button data-open="modal-register" class="button primary__button "><span class="subhead">Register</span></button></li>
-      </ul>
+        <ul class="menu">
+          <li class="logo"><a href="/index.html">
+            {{#ifpage 'index' 'splash'}}<img src="{{root}}assets/img/logo/cyc-logo-white.svg" alt="Logo">{{/ifpage}}
+            {{#unlesspage 'index' 'splash'}}<img src="{{root}}assets/img/logo/cyc-logo-full-color.svg" alt="Logo">{{/unlesspage}}</a></li>
+          <li><a href="/index.html" class="subhead menu__link">Home</a></li>
+          <li><a href="/about.html" class="subhead menu__link">About</a></li>
+          <!-- <li><a href="/program.html" class="subhead menu__link">Program</a></li> -->
+          <li><a href="/schedule.html" class="subhead menu__link">Schedule</a></li>
+          <li><a href="/faq.html" class="subhead menu__link">FAQ</a></li>
+          <li><a class="button primary__button" href="/register-organization.html"><span class="subhead type__white">Register</span></a></li>
+        </ul>
     </div>
   </div>
 </header>
-
-<div class="reveal large modal__register" id="modal-register" data-reveal>
-  <div class="grid-x grid-margin-x">
-    <div class="small-12 cell">
-      <h3 class="display">Choose your organization to get started.</h3>
-    </div>
-  </div>
-  <div class="grid-x grid-padding-x small-up-2 medium-up-4">
-     {{#each crewmember as | crewmember i| }}
-       {{#if crewmember.participation}}
-       <div class="cell">
-         <div class="card crewmember">
-           <a href="{{crewmember.registration}}" target="_blank">
-             <img src="../assets/img/logo/{{crewmember.member}}.png" alt="{{crewmember.member}}" class="member-logo">
-            </a>
-          </div>
-      </div>
-      {{/if}}
-    {{/each}}
-  </div>
-  <p class="text-center"><a href="" class="type__bold">My organization isn't listed.</a></p>
-  <button class="close-button" data-close aria-label="Close modal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>

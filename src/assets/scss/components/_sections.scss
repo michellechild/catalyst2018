@@ -12,7 +12,7 @@ body {
   flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
 }
 
-.header__main{
+.header__main {
   background-color: #F2F3F4;
   overflow-x: hidden;
 }
@@ -34,4 +34,38 @@ footer {
   .logo {
     margin-right: 0;
   }
+}
+
+//Intro
+
+.section__intro {
+  background-color: $light-gray;
+}
+
+.intro__list {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.intro__list-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+//Crewmember
+
+.crewmember__headline {
+  margin-bottom: 3rem;
+}
+
+.crewmember-logo {
+    border: none;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.crewmember-logo__link {
+  display: block;
 }

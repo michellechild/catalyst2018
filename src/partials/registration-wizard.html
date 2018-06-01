@@ -1,0 +1,31 @@
+<section class="register-wizard">
+  <div class="grid-x">
+    <div class="small-4 cell wizard__step {{#ifpage 'register-organization'}}active{{/ifpage}} {{#unlesspage 'register-organization'}}complete{{/unlesspage}}">
+      <a href="/register-organization.html">
+        <div>
+        {{#ifpage 'register-organization'}}
+          <img src="{{root}}assets/img/icon/nonprofit/nonprofit.svg" alt="Nonprofit" class="wizard__icon">
+        {{/ifpage}}
+
+        {{#unlesspage 'register-organization'}}
+          <img src="{{root}}assets/img/icon/check/check.svg" alt="Check" class="wizard__icon">
+        {{/unlesspage}}
+
+          <p class="bold">1</p>
+        </div>
+      </a>
+    </div>
+    <div class="small-4 cell wizard__step {{#unlesspage 'register-organization'}}active{{/unlesspage}}">
+      <div>
+        <img src="{{root}}assets/img/icon/ticket/ticket-outline-black.svg" alt="ticket" class="wizard__icon">
+        <p class="bold">2</p>
+      </div>
+    </div>
+    <div class="small-4 cell wizard__step">
+      <div>
+        <img src="{{root}}assets/img/icon/register/register.svg" alt="Nonprofit" class="wizard__icon">
+        <p class="bold">3</p>
+      </div>
+    </div>
+  </div>
+</section>

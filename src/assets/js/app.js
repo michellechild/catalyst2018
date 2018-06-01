@@ -11,6 +11,30 @@ import Foundation from 'foundation-sites';
 
 $(document).foundation();
 
+// $('#friday-expand').click(function(){
+//   $(this).removeClass('large-auto').addClass('large-4');
+//   $('.schedule__day').removeClass('large-4').addClass('large-auto');
+//   $('#friday').removeClass('large-auto').addClass('large-4');
+// });
+//
+// $('#saturday-expand').click(function(){
+//   $(this).removeClass('large-auto').addClass('large-4');
+//   $('.schedule__day').removeClass('large-4').addClass('large-auto');
+//   $('#saturday').removeClass('large-auto').addClass('large-3');
+// });
+//
+// $('#sunday-expand').click(function(){
+//   $(this).removeClass('large-auto').addClass('large-4');
+//   $('.schedule__day').removeClass('large-4').addClass('large-auto');
+//   $('#sunday').removeClass('large-auto').addClass('large-4');
+// });
+//
+// $('#monday-expand').click(function(){
+//   $(this).removeClass('large-auto').addClass('large-4');
+//   $('.schedule__day').removeClass('large-4').addClass('large-auto');
+//   $('#monday').removeClass('large-auto').addClass('large-4');
+// });
+
 
 $('#chkdiscount').prop( "checked", true );
 $('#tickets_promocode').css( "display", "block" );
@@ -22,7 +46,7 @@ var scheduleOptions = {
 var schedule = new List('schedule', scheduleOptions);
 
   // Add smooth scrolling to all links
-  $(".interest-form__link").on('click', function(event) {
+  $("a").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {

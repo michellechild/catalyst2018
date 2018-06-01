@@ -6,22 +6,14 @@
   }
 }
 
-p, li {
-
-  @include breakpoint(medium) {
-    font-size: rem-calc(18px);
-  }
-
-  @include breakpoint(large) {
-    // font-size: rem-calc(20px);
-  }
+.text__small {
+  font-size: rem-calc(14);
 }
 
 .mega {
   font-weight: bold;
   letter-spacing: 2px;
   text-transform: uppercase;
-  text-align: center;
   @include breakpoint(large) {
     font-size: 3.75rem;
   }
@@ -33,27 +25,14 @@ p, li {
   margin-bottom: 1.25rem;
 }
 
-.button {
-  font-weight: 600;
-  font-size: rem-calc(16);
+.primary {
+  color: $primary-color;
 }
 
 .headline {
-  color: $medium-gray;
   font-weight: 600;
   text-align: center;
-}
-
-.faq__headline {
-  color: get-color(brand-purple);
-}
-
-.italic {
-  font-style: italic;
-}
-
-.title, %title {
-  text-align: center;
+  color: $medium-gray;
 }
 
 .subhead, %subhead {
@@ -61,18 +40,11 @@ p, li {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-align: center;
+  color: $medium-gray;
 }
 
-.type__bold {
-  font-weight: 600;
-}
-
-.type__italic {
-  font-style: italic;
-}
-
-.type__white {
-  color: $white;
+.title, %title {
+  color: inherit;
 }
 
 %caption{
@@ -80,10 +52,20 @@ p, li {
   font-size: 95%;
 }
 
-.primary-color {
-  color: $primary-color;
+.button {
+  font-weight: 600;
+  font-size: rem-calc(16);
+  color: $white;
 }
 
-.secondary-color {
-  color: $secondary-color;
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.type__white {
+  color: $white;
 }
