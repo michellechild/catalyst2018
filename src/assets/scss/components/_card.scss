@@ -11,9 +11,41 @@
   margin-top: 1.5rem;
 }
 
-.card {
+.card__about {
   border: none;
   max-width: 570px;
+}
+
+.card__timeline {
+  background-color: $white;
+  border-radius: 3px;
+  border: none;
+  margin: 0 0.5rem;
+  transition: 600ms ease all;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(30,32,35,.26);
+  -moz-box-shadow: 0 2px 3px 0 rgba(30,32,35,.26);
+  box-shadow: 0 2px 3px 0 rgba(30,32,35,.26);
+
+  &:hover {
+    -webkit-box-shadow: 0 9px 30px 3px rgba(30,32,35,.26);
+    -moz-box-shadow: 0 9px 30px 3px rgba(30,32,35,.26);
+    box-shadow: 0 9px 30px 3px rgba(30,32,35,.26);
+  }
+
+  + .card__timeline {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.card-section__timeline {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  p {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
 }
 
 @mixin card-color($color){

@@ -74,7 +74,13 @@ $foundation-palette: (
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
+  brand-blue: #00BCF5,
+  brand-yellow: #FFE953,
+  brand-purple: #444B94,
+  brand-orange: #FEAB14,
+  brand-pink: #FB3780
 );
+
 $light-gray: #F2F3F4;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
@@ -770,8 +776,8 @@ $switch-paddle-transition: all 0.25s ease-out;
 // 50. Table
 // ---------
 
-$table-background: $white;
-$table-color-scale: 5%;
+$table-background: #fafafa;
+$table-color-scale: 3%;
 $table-border: 1px solid smart-scale($table-background, $table-color-scale);
 $table-padding: rem-calc(8 10 10);
 $table-hover-scale: 2%;

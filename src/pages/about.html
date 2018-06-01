@@ -17,7 +17,7 @@
     <div class="grid-x grid-margin-x medium-up-2 large-up-3">
      {{#each crewmember as | crewmember i| }}
        {{#if crewmember.about}}
-         <div class="cell card card__{{crewmember.member}}">
+         <div class="cell card card__about card__{{crewmember.member}}">
           <a href="{{crewmember.url}}" target="_blank" class="card__link">
             <img src="../assets/img/logo/{{crewmember.member}}.png" class="member-logo" alt="{{crewmember.member}}">
             <h4 class="card__title">{{crewmember.title}}</h4>

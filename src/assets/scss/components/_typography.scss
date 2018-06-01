@@ -45,7 +45,7 @@ p, li {
 }
 
 .faq__headline {
-  color: #444B94;
+  color: get-color(brand-purple);
 }
 
 .italic {
@@ -54,7 +54,6 @@ p, li {
 
 .title, %title {
   text-align: center;
-  color: $white;
 }
 
 .subhead, %subhead {
@@ -72,14 +71,6 @@ p, li {
   font-style: italic;
 }
 
-.primary-color {
-  color: $primary-color;
-}
-
-.secondary-color {
-  color: $secondary-color;
-}
-
 .type__white {
   color: $white;
 }
@@ -87,4 +78,12 @@ p, li {
 %caption{
   text-align: center;
   font-size: 95%;
+}
+
+.primary-color {
+  color: $primary-color;
+}
+
+.secondary-color {
+  color: $secondary-color;
 }

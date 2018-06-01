@@ -1,0 +1,71 @@
+.timeline__body {
+  @include breakpoint(large) {
+    height: 3300px;
+    margin: 0 1.5rem;
+    background: repeating-linear-gradient(180deg,rgba(170,178,189,.2),rgba(170,178,189,.2) 100px,
+    hsla(215,9%,43%,.2) 0,hsla(215,9%,43%,.2) 200px);
+  }
+}
+
+.friday {
+  @include breakpoint(large) {
+    margin-top: 1400px;
+  }
+}
+
+.time {
+  height: 110px;
+  margin-left: -12px;
+  margin-top: -10px;
+}
+
+@mixin track-type($color) {
+  color: $color;
+  font-weight: 600;
+
+  .card-divider {
+    background-color: $color;
+    color: $white;
+  }
+}
+
+.theme  {
+  @include track-type(get-color(brand-orange));
+}
+
+.org  {
+  @include track-type(get-color(brand-blue));
+}
+
+.collab  {
+  @include track-type(get-color(brand-purple));
+}
+
+@mixin hour-interval($hour) {
+  height: calc((200px * #{$hour}) - 0.5rem);
+}
+
+
+.half-hour {
+  @include hour-interval(0.5);
+
+  .card-divider {
+    padding: 0.25rem 1rem;
+  }
+}
+
+.hour {
+  @include hour-interval(1);
+}
+
+.hour-half {
+  @include hour-interval(1.5);
+}
+
+.two-hours {
+  @include hour-interval(2);
+}
+
+.two-hours-half {
+  @include hour-interval(2.5);
+}

@@ -29,52 +29,6 @@
   padding: 6.25rem 0;
 }
 
-@mixin background-left($color1, $color2) {
-  background-image: linear-gradient($color1, $color2);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  transform: skewY(-4deg);
-  transform-origin: top left;
-}
-
-@mixin background-right($color) {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  background-color:$color;
-  transform: skewY(4deg);
-  transform-origin: bottom right;
-}
-
-
-.background-right {
-  @include background-right(#00A5D4);
-}
-
-.background-left{
-  @include background-left(#444B94,#272D70);
-}
-
-// .hero__register-bg {
-//   @include hero__bg2(#00A5D4);
-// }
-//
-// .hero__about-bg {
-//   @include hero__bg2(#00A5D4);
-// }
-//
-// .hero__about-bg2 {
-//   @include hero__bg1(#444B94,#272D70);
-// }
-
-
-
 .hero__icon {
   margin-bottom: 1rem;
 }
@@ -105,4 +59,37 @@
 
 .hero__button {
   margin: 0.5rem auto;
+}
+
+
+@mixin background-left($color1, $color2) {
+  background-image: linear-gradient($color1, $color2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transform: skewY(-4deg);
+  transform-origin: top left;
+}
+
+@mixin background-right($color) {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background-color:$color;
+  transform: skewY(4deg);
+  transform-origin: bottom right;
+}
+
+
+.background-right {
+  @include background-right(get-color(brand-blue));
+}
+
+.background-left{
+  @include background-left(get-color(brand-purple),#272D70);
 }
