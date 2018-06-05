@@ -25,9 +25,7 @@
   margin-bottom: 1.25rem;
 }
 
-.primary {
-  color: $primary-color;
-}
+
 
 .headline {
   font-weight: 600;
@@ -68,4 +66,12 @@
 
 .type__white {
   color: $white;
+}
+
+.primary {
+  color: get-color(primary);
+}
+
+.secondary {
+  color: darken(get-color(secondary), 20%);
 }

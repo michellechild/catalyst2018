@@ -27,7 +27,7 @@
   }
 }
 
-.hero__schedule {
+.hero__schedule, .hero__program {
   color: $white;
   text-align: center;
 
@@ -75,8 +75,8 @@
 }
 
 
-@mixin background-left($color1, $color2) {
-  background-image: linear-gradient($color1, $color2);
+@mixin background-left($color1) {
+  background-color: $color1;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -86,23 +86,32 @@
   transform-origin: top left;
 }
 
-@mixin background-right($color1, $color2) {
+@mixin background-right($color2) {
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
   width: 100%;
-  background-image: linear-gradient($color1, $color2);
+  background-color: $color2;
   transform: skewY(4deg);
   transform-origin: bottom right;
 }
 
+.hero__schedule {
+  .background-right {
+    @include background-right(get-color(secondary));
+  }
 
-.background-right {
-  @include background-right(#272D70, get-color(secondary));
+  .background-left{
+    @include background-left(get-color(brand-purple));
+  }
 }
 
-.background-left{
-  @include background-left(get-color(secondary),#272D70);
+
+.hero__program {
+
+  .background-right {
+    @include background-right(get-color(brand-blue));
+  }
 }

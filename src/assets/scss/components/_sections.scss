@@ -69,3 +69,17 @@ footer {
 .crewmember-logo__link {
   display: block;
 }
+
+//Program
+
+.section__program p, li, a {
+  @include breakpoint(medium) {
+    font-size: rem-calc(18);
+  }
+}
+
+
+.article__program {
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}

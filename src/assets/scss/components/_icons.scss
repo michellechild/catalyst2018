@@ -8,6 +8,11 @@
   height: 20px;
 }
 
+
+.icon__text{
+  vertical-align: middle;
+}
+
 .member-logo {
   width: 100%;
   max-width: 100px;
@@ -19,4 +24,14 @@
   &:hover {
     opacity: 1;
   }
+}
+
+.program__icon {
+  width: 32px;
+}
+
+.skill__icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 2rem;
 }

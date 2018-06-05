@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import whatInput from 'what-input';
+var fullPage = require('fullpage.js');
 var List = require('list.js');
 window.$ = $;
 
@@ -10,30 +11,6 @@ import Foundation from 'foundation-sites';
 
 
 $(document).foundation();
-
-// $('#friday-expand').click(function(){
-//   $(this).removeClass('large-auto').addClass('large-4');
-//   $('.schedule__day').removeClass('large-4').addClass('large-auto');
-//   $('#friday').removeClass('large-auto').addClass('large-4');
-// });
-//
-// $('#saturday-expand').click(function(){
-//   $(this).removeClass('large-auto').addClass('large-4');
-//   $('.schedule__day').removeClass('large-4').addClass('large-auto');
-//   $('#saturday').removeClass('large-auto').addClass('large-3');
-// });
-//
-// $('#sunday-expand').click(function(){
-//   $(this).removeClass('large-auto').addClass('large-4');
-//   $('.schedule__day').removeClass('large-4').addClass('large-auto');
-//   $('#sunday').removeClass('large-auto').addClass('large-4');
-// });
-//
-// $('#monday-expand').click(function(){
-//   $(this).removeClass('large-auto').addClass('large-4');
-//   $('.schedule__day').removeClass('large-4').addClass('large-auto');
-//   $('#monday').removeClass('large-auto').addClass('large-4');
-// });
 
 
 $('#chkdiscount').prop( "checked", true );

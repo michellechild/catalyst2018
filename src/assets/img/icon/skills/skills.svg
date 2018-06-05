@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="40px" viewBox="0 0 38 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>skills/skills</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-227.000000, -22.000000)" fill="#99A0A2" fill-rule="nonzero">
+            <g id="skills/skills" transform="translate(226.000000, 22.000000)">
+                <path d="M8.10810811,33.3445946 C11.989028,33.3445946 15.1351351,30.1984874 15.1351351,26.3175676 C15.1351351,22.4366477 11.989028,19.2905405 8.10810811,19.2905405 C4.22718824,19.2905405 1.08108108,22.4366477 1.08108108,26.3175676 C1.08108108,30.1984874 4.22718824,33.3445946 8.10810811,33.3445946 Z" id="Oval"></path>
+                <polygon id="Triangle" points="20.3983969 13.8851351 37.9799815 13.8851351 29.1891892 0.698946635"></polygon>
+                <polygon id="Rectangle-2" points="24.8648649 25.777027 24.8648649 39.8310811 38.9189189 39.8310811 38.9189189 25.777027"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
