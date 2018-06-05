@@ -75,30 +75,36 @@
 }
 
 .schedule__headline {
-  color: darken(get-color(secondary), 20%);
+  color: $medium-gray;
   font-weight: 600;
+  font-size: 1.25rem;
   text-align: center;
   margin-bottom: 2rem;
-  font-size: 32px;
 
   @include breakpoint (large) {
-    font-size: 22px;
     margin-bottom: 0;
     text-align: left;
   }
 }
 
 
-.program__title, .program__link {
-  color: $black;
-  opacity: 0.5;
+.program__header {
+  margin-bottom: 2rem;
   font-weight: 600;
-  transition: 300ms ease all;
+  @include hide-for-only(small);;
 }
 
-.program__link:hover {
-  color: $black;
-  opacity: 1;
+.program__panel {
+  @include breakpoint(medium) {
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+}
+
+a.program__link {
+  font-size: rem-calc(16);
+  font-weight: 600;
+  transition: 300ms ease all;
 }
 
 .program__title {
@@ -118,14 +124,4 @@
   margin-left: 1rem;
   width: 100%;
   max-width: 150px;
-}
-
-.program__callout {
-  border: none;
-  padding-left: 0;
-}
-
-.program__header {
-  margin-bottom: 1rem;
-  font-weight: 600;
 }

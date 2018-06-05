@@ -46,15 +46,23 @@
 }
 
 .theme  {
-  @include track-type(get-color(brand-orange));
+  @include track-type(get-color(primary));
 }
 
 .org  {
-  @include track-type(get-color(brand-blue));
+  @include track-type(get-color(brand-purple));
+}
+
+.meal {
+  @include track-type(get-color(brand-orange));
 }
 
 .collab  {
-  @include track-type(get-color(brand-purple));
+  @include track-type(get-color(brand-blue));
+}
+
+.break {
+  @include track-type(get-color(brand-orange));
 }
 
 .half-hour {

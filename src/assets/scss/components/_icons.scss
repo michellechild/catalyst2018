@@ -1,5 +1,10 @@
 .icon--left {
-  margin-right: 0.5rem;
+  margin-right: 1rem;
+  margin-top: 0.25rem;
+}
+
+.icon--right {
+  margin-left: 1rem;
   margin-top: 0.25rem;
 }
 
@@ -8,6 +13,10 @@
   height: 20px;
 }
 
+.icon__large {
+  width: 32px;
+  height: 32px;
+}
 
 .icon__text{
   vertical-align: middle;

@@ -1,6 +1,5 @@
 import $ from 'jquery';
 import whatInput from 'what-input';
-var fullPage = require('fullpage.js');
 var List = require('list.js');
 window.$ = $;
 
@@ -23,7 +22,7 @@ var scheduleOptions = {
 var schedule = new List('schedule', scheduleOptions);
 
   // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+  $("a:not('.program__link')").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {

@@ -1,24 +1,24 @@
 <section class="hero hero__schedule">
-  <div class="background-right"></div>
   <div class="grid-container">
     <div class="grid-x">
       <div class="small-12 cell">
         <div class="hero__content">
-          <img class="hero__icon" src="{{root}}assets/img/icon/schedule/schedule.svg" alt="">
-          <h1 class="display">2018 Catalyst Schedule</h1>
+          <img src="{{root}}assets/img/icon/schedule-graphic.svg" alt="" class="hero__icon">
+          <h1 class="display">Catalyst 2018 Schedule</h1>
+          <p class="headline">August 3-6, 2018</p>
+          <p class="hero__description">A 4-day leadership retreat, as part of your journey; your journey to embody who you really are, who you wish to be, & who you are becoming.</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="background-left"></div>
 </section>
 
-<section class="section">
+<section>
   <div class="schedule-container">
     <div class="grid-x show-for-large timeline__header">
       <div class="cell large-offset-1 large-auto">
         <div class="grid-x">
-          <div class="small-12 large-auto cell"><a href="#friday" id="friday-expand"><h5 class="schedule__headline">Friday (Starts at 2pm)</h5></a></div>
+          <div class="small-12 large-auto cell"><a href="#friday" id="friday-expand"><h5 class="schedule__headline">Friday (starts at 2pm)</h5></a></div>
           <div class="small-12 large-auto cell"><a href="#saturday" id="saturday-expand"><h5 class="schedule__headline">Saturday</h5></a></div>
           <div class="small-12 large-auto cell"><a href="#sunday" id="sunday-expand"><h5 class="schedule__headline">Sunday</h5></a></div>
           <div class="small-12 large-auto cell"><a href="#monday" id="monday-expand"><h5 class="schedule__headline">Monday</h5></a></div>
@@ -26,32 +26,32 @@
       </div>
     </div>
     <div class="grid-x grid-margin-x timeline__body">
-      <div class="large-shrink show-for-large">
+      <div class="large-shrink cell show-for-large">
         {{#each hours}}
           <div class="time">{{this}}</div>
         {{/each}}
       </div>
-      <div class="small-12 large-auto" >
+      <div class="small-12 cell large-auto" >
         <div class="grid-x">
           <div class="small-12 large-auto cell schedule__day" id="friday">
-            <h5 class="schedule__headline hide-for-large">Friday (Starts at 2pm)</h5>
-            <div class="card card__timeline arrivals collab">
+            <h2 class="schedule__headline hide-for-large">Friday (starts at 2pm)</h2>
+            <div class="card card__timeline arrivals break">
               <div class="card-divider">
                 2:00-5:30pm
               </div>
               <div class="card-section card-section__timeline">
                 <p>Arrivals</p>
-                <img src="{{root}}assets/img/icon/car/car.svg" alt="">
+                <img src="{{root}}assets/img/icon/car/car.svg" class="icon_large" alt="">
 
               </div>
             </div>
-            <div class="card card__timeline hour collab">
+            <div class="card card__timeline hour meal">
               <div class="card-divider">
                 5:30-6:30pm
               </div>
               <div class="card-section card-section__timeline">
                 <p>Dinner</p>
-                <img src="{{root}}assets/img/icon/meal/meal.svg" alt="">
+                <img src="{{root}}assets/img/icon/meal/meal.svg" class="icon_large" alt="">
               </div>
             </div>
             <div class="card card__timeline hour collab">
@@ -78,35 +78,35 @@
                 </ul>
               </div>
             </div>
-            <div class="card card__timeline two-hours-half collab">
+            <div class="card card__timeline two-hours-half break">
             <div class="card-divider">
               8:30-11:00pm
             </div>
             <div class="card-section card-section__timeline">
                 <p>Evening mixer & late night lounge</p>
-                <img src="{{root}}assets/img/icon/fire/fire.svg" alt="">
+                <img src="{{root}}assets/img/icon/fire/fire.svg" class="icon_large" alt="">
             </div>
           </div>
           </div>
           <div class="small-12 large-auto cell schedule__day" id="saturday">
-            <h5 class="schedule__headline hide-for-large">Saturday</h5>
-            <div class="card card__timeline hour collab">
+            <h2 class="schedule__headline hide-for-large">Saturday</h2>
+            <div class="card card__timeline hour break">
               <div class="card-divider">
                 7:00-8:00am
               </div>
               <div class="card-section card-section__timeline">
                   <p>Yoga & trail run</p>
-                  <img src="{{root}}assets/img/icon/yoga/warrior.svg" alt="">
-                  <img src="{{root}}assets/img/icon/yoga/tree.svg" alt="">
+                  <img src="{{root}}assets/img/icon/yoga/warrior.svg" class="icon_large" alt="">
+                  <img src="{{root}}assets/img/icon/yoga/tree.svg" class="icon_large" alt="">
               </div>
             </div>
-            <div class="card card__timeline hour collab">
+            <div class="card card__timeline hour meal">
               <div class="card-divider">
                 8:00-9:00am
               </div>
               <div class="card-section card-section__timeline">
                   <p>Breakfast</p>
-                  <img src="{{root}}assets/img/icon/meal/meal.svg" alt="">
+                  <img src="{{root}}assets/img/icon/meal/meal.svg" class="icon_large" alt="">
               </div>
             </div>
             <div class="card card__timeline hour collab">
@@ -125,13 +125,13 @@
                 <p>2nd Cohort check-in</p>
               </div>
             </div>
-            <div class="card card__timeline half-hour collab">
+            <div class="card card__timeline half-hour break">
               <div class="card-divider">
                 10:30-11:00am
               </div>
               <div class="card-section card-section__timeline">
                 <p>Break</p>
-                <img src="{{root}}assets/img/icon/hammock/hammock.svg" alt="">
+                <img src="{{root}}assets/img/icon/hammock/hammock.svg" class="icon_large" alt="">
               </div>
             </div>
             <div class="card card__timeline theme hour-half">
@@ -143,13 +143,13 @@
                 <p class="theme__title">Building yourself</p>
               </div>
             </div>
-            <div class="card card__timeline hour collab">
+            <div class="card card__timeline hour meal">
               <div class="card-divider">
                 12:30-1:30pm
               </div>
               <div class="card-section card-section__timeline">
                   <p>Lunch</p>
-                  <img src="{{root}}assets/img/icon/meal/meal.svg" alt="">
+                  <img src="{{root}}assets/img/icon/meal/meal.svg" class="icon_large" alt="">
               </div>
             </div>
             <div class="card card__timeline theme hour-half">
@@ -170,13 +170,13 @@
                 <p class="theme__title">Building yourself</p>
               </div>
             </div>
-            <div class="card card__timeline half-hour collab">
+            <div class="card card__timeline half-hour break">
               <div class="card-divider">
                 4:00-4:30pm
               </div>
               <div class="card-section card-section__timeline">
                 <p>Break</p>
-                <img src="{{root}}assets/img/icon/hammock/hammock.svg" alt="">
+                <img src="{{root}}assets/img/icon/hammock/hammock.svg" class="icon_large" alt="">
               </div>
             </div>
             <div class="card card__timeline theme hour">
@@ -194,16 +194,16 @@
               </div>
               <div class="card-section card-section__timeline">
                 <p>3rd Cohort check-in</p>
-                <img src="{{root}}assets/img/icon/home/home.svg" alt="">
+                <img src="{{root}}assets/img/icon/home/home.svg" class="icon_large" alt="">
               </div>
             </div>
-            <div class="card card__timeline hour collab">
+            <div class="card card__timeline hour meal">
               <div class="card-divider">
                 6:00-7:00pm
               </div>
               <div class="card-section card-section__timeline">
                   <p>Dinner</p>
-                  <img src="{{root}}assets/img/icon/meal/meal.svg" alt="">
+                  <img src="{{root}}assets/img/icon/meal/meal.svg" class="icon_large" alt="">
               </div>
             </div>
             <div class="card card__timeline two-hours collab">
@@ -212,38 +212,38 @@
               </div>
               <div class="card-section card-section__timeline">
                   <p>Free time or 'Choose your own adventure'</p>
-                  <img src="{{root}}assets/img/icon/adventure/adventure.svg" alt="">
+                  <img src="{{root}}assets/img/icon/adventure/adventure.svg" class="icon_large" alt="">
               </div>
             </div>
-            <div class="card card__timeline two-hours collab">
+            <div class="card card__timeline two-hours break">
                   <div class="card-divider">
                     9:00-11:00pm
                   </div>
                   <div class="card-section card-section__timeline">
                       <p>Evening mixer & late night lounge</p>
-                      <img src="{{root}}assets/img/icon/fire/fire.svg" alt="">
+                      <img src="{{root}}assets/img/icon/fire/fire.svg" class="icon_large" alt="">
                   </div>
                 </div>
           </div>
           <div class="small-12 large-auto cell schedule__day" id="sunday">
-            <h5 class="schedule__headline hide-for-large">Sunday</h5>
-            <div class="card card__timeline hour collab">
+            <h2 class="schedule__headline hide-for-large">Sunday</h2>
+            <div class="card card__timeline hour break">
               <div class="card-divider">
                 7:00-8:00am
               </div>
               <div class="card-section card-section__timeline">
                   <p>Yoga & trail run</p>
-                  <img src="{{root}}assets/img/icon/yoga/warrior.svg" alt="">
-                  <img src="{{root}}assets/img/icon/yoga/tree.svg" alt="">
+                  <img src="{{root}}assets/img/icon/yoga/warrior.svg" class="icon_large" alt="">
+                  <img src="{{root}}assets/img/icon/yoga/tree.svg" class="icon_large" alt="">
               </div>
             </div>
-            <div class="card card__timeline hour collab">
+            <div class="card card__timeline hour meal">
               <div class="card-divider">
                 8:00-9:00am
               </div>
               <div class="card-section card-section__timeline">
                 <p>Breakfast</p>
-                <img src="{{root}}assets/img/icon/meal/meal.svg" alt="">
+                <img src="{{root}}assets/img/icon/meal/meal.svg" class="icon_large" alt="">
               </div>
             </div>
             <div class="card card__timeline org hour-half">
@@ -254,13 +254,13 @@
                 <p>Org-specific time</p>
               </div>
             </div>
-            <div class="card card__timeline half-hour collab">
+            <div class="card card__timeline half-hour break">
               <div class="card-divider">
                 10:30-11:00am
               </div>
               <div class="card-section card-section__timeline">
                 <p>Break</p>
-                <img src="{{root}}assets/img/icon/hammock/hammock.svg" alt="">
+                <img src="{{root}}assets/img/icon/hammock/hammock.svg" class="icon_large" alt="">
               </div>
             </div>
             <div class="card card__timeline org hour">
@@ -271,13 +271,13 @@
                 <p>Org-specific time</p>
               </div>
             </div>
-            <div class="card card__timeline hour collab">
+            <div class="card card__timeline hour meal">
               <div class="card-divider">
                 12:00-1:00pm
               </div>
               <div class="card-section card-section__timeline">
                   <p>Lunch</p>
-                  <img src="{{root}}assets/img/icon/meal/meal.svg" alt="">
+                  <img src="{{root}}assets/img/icon/meal/meal.svg" class="icon_large" alt="">
               </div>
             </div>
             <div class="card card__timeline org two-hours">
@@ -288,13 +288,13 @@
                 <p>Org-specific time</p>
               </div>
             </div>
-            <div class="card card__timeline half-hour collab">
+            <div class="card card__timeline hour collab">
               <div class="card-divider">
-                3:30-4:00pm
+                3:00-4:00pm
               </div>
               <div class="card-section card-section__timeline">
                 <p>Networking Break</p>
-                <img src="{{root}}assets/img/icon/network/network.svg" alt="">
+                <img src="{{root}}assets/img/icon/network/network.svg" class="icon_large" alt="">
               </div>
             </div>
             <div class="card card__timeline half-hour collab">
@@ -303,7 +303,7 @@
               </div>
               <div class="card-section card-section__timeline">
                 <p>4th Cohort check-in</p>
-                <img src="{{root}}assets/img/icon/home/home.svg" alt="">
+                <img src="{{root}}assets/img/icon/home/home.svg" class="icon_large" alt="">
               </div>
             </div>
             <div class="card card__timeline hour-half collab">
@@ -314,53 +314,53 @@
                 <p>People's Supper Prep</p>
               </div>
             </div>
-            <div class="card card__timeline hour collab">
+            <div class="card card__timeline hour meal">
               <div class="card-divider">
                 6:00-7:00pm
               </div>
               <div class="card-section card-section__timeline">
                   <p>Dinner</p>
-                  <img src="{{root}}assets/img/icon/meal/meal.svg" alt="">
+                  <img src="{{root}}assets/img/icon/meal/meal.svg" class="icon_large" alt="">
               </div>
             </div>
-            <div class="card card__timeline two-hours collab">
+            <div class="card card__timeline hour-half collab">
               <div class="card-divider">
                 7:00-8:30pm
               </div>
               <div class="card-section card-section__timeline">
                 <p>Gratitude Circle and Debrief</p>
-                <img src="{{root}}assets/img/icon/happy/happy.svg" alt="">
+                <img src="{{root}}assets/img/icon/happy/happy.svg" class="icon_large" alt="">
               </div>
             </div>
-            <div class="card card__timeline two-hours-half collab">
+            <div class="card card__timeline two-hours-half break">
                   <div class="card-divider">
                     8:30-11:00pm
                   </div>
                   <div class="card-section card-section__timeline">
                     <p>Evening mixer & late night lounge</p>
-                    <img src="{{root}}assets/img/icon/fire/fire.svg" alt="">
+                    <img src="{{root}}assets/img/icon/fire/fire.svg" class="icon_large" alt="">
                   </div>
                 </div>
           </div>
           <div class="small-12 large-auto cell schedule__day" id="monday">
-            <h5 class="schedule__headline hide-for-large">Monday</h5>
-            <div class="card card__timeline hour collab">
+            <h2 class="schedule__headline hide-for-large">Monday</h2>
+            <div class="card card__timeline hour break">
               <div class="card-divider">
                 7:00-8:00am
               </div>
               <div class="card-section card-section__timeline">
                   <p>Pack and get ready to leave</p>
-                  <img src="{{root}}assets/img/icon/yoga/warrior.svg" alt="">
-                  <img src="{{root}}assets/img/icon/yoga/tree.svg" alt="">
+                  <img src="{{root}}assets/img/icon/yoga/warrior.svg" class="icon_large" alt="">
+                  <img src="{{root}}assets/img/icon/yoga/tree.svg" class="icon_large" alt="">
               </div>
             </div>
-            <div class="card card__timeline hour collab">
+            <div class="card card__timeline hour meal">
               <div class="card-divider">
                 8:00-9:00am
               </div>
               <div class="card-section card-section__timeline">
                   <p>Breakfast</p>
-                  <img src="{{root}}assets/img/icon/meal/meal.svg" alt="">
+                  <img src="{{root}}assets/img/icon/meal/meal.svg" class="icon_large" alt="">
               </div>
             </div>
             <div class="card card__timeline half-hour collab">
@@ -369,7 +369,7 @@
               </div>
               <div class="card-section card-section__timeline">
                 <p>Final Cohort check-in</p>
-                <img src="{{root}}assets/img/icon/home/home.svg" alt="">
+                <img src="{{root}}assets/img/icon/home/home.svg" class="icon_large" alt="">
               </div>
             </div>
             <div class="card card__timeline hour-half collab">
@@ -378,17 +378,17 @@
               </div>
               <div class="card-section card-section__timeline">
                   <p>Final ceremonies</p>
-                  <img src="{{root}}assets/img/icon/yoga/warrior.svg" alt="">
-                  <img src="{{root}}assets/img/icon/yoga/tree.svg" alt="">
+                  <img src="{{root}}assets/img/icon/yoga/warrior.svg" class="icon_large" alt="">
+                  <img src="{{root}}assets/img/icon/yoga/tree.svg" class="icon_large" alt="">
               </div>
             </div>
-            <div class="card card__timeline hour collab">
+            <div class="card card__timeline hour meal">
               <div class="card-divider">
                 11:00-12:00pm
               </div>
               <div class="card-section card-section__timeline">
                 <p>Clean up and leave + sack lunches</p>
-                <img src="{{root}}assets/img/icon/meal/meal.svg" alt="">
+                <img src="{{root}}assets/img/icon/meal/meal.svg" class="icon_large" alt="">
               </div>
             </div>
           </div>
