@@ -1,9 +1,15 @@
-.menu {
+.menu, .title-bar {
   display: flex;
 
   .logo {
     margin-right: auto;
   }
+}
+
+.title-bar__button {
+  border-radius: 5px;
+  margin-bottom: 0;
+  color: $white !important;
 }
 
 .header__item {

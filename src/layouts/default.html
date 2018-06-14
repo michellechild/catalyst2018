@@ -14,12 +14,18 @@
   </head>
   <body>
 
-    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
-    <div class="sticky-footer">
-      {{#unlesspage 'index' 'splash'}}{{>header}}{{/unlesspage}}
-      {{> body}}
-    </div>
-    {{> footer}}
+        {{> nav-mobile}}
+
+        <div class="off-canvas-content" data-off-canvas-content>
+
+        <div class="sticky-footer">
+
+          {{#unlesspage 'index' 'splash'}}{{>header}}{{/unlesspage}}
+          {{> body}}
+        </div>
+        {{> footer}}
+      </div>
+
     <script src="{{root}}assets/js/app.js"></script>
   </body>
 </html>

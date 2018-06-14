@@ -4,37 +4,62 @@
       <div class="grid-x">
         <div class="small-12 cell">
           <div class="hero__content">
-            <h1 class="mega">Catalyst 2018</h1>
-            <h4 class="bold italic">Level up your leadership. Catalyze your community.</h4>
-            <h5>August 3-6, 2018 - Bryn Athyn, PA</h5>
-            <a href="/register-organization.html"  class="button primary__button hero__button">Register now!</a>
+            <h1 class="mega animate-in">Catalyst 2018</h1>
+            <h4 class="bold italic animate-in">Level up your leadership. Catalyze your community.</h4>
+            <h5 class="animate-in">August 3-6, 2018 - Bryn Athyn, PA</h5>
+            <a href="/register-organization.html"  class="button primary__button large hero__button animate-in">Register now!</a>
           </div>
         </div>
       </div>
     </div>
 </section>
-<section class="section section__intro">
+<section class="section section__intro angle--both-left-right">
   <div class="grid-container">
     <div class="grid-x grid-margin-x">
       <div class="small-12 medium-offset-2 medium-8 end cell">
-        <h2 class="display primary">The world needs you!</h2>
-        <p class="bold">And in order to address the challenges of our generation, it needs you to be <span class="italic">enthusiastic</span>, <span class="italic">empowered</span>, and <span class="italic">exceptional</span>.</p>
-        <p>We know that you want to live a vibrant life <span class="italic">and</span> make an impact. So, to support you in realizing your highest potential, your organization is collaborating with eleven others to host a three-day leadership retreat designed to:</p>
+        <h2 class="display secondary">The world needs YOU.</h2>
+        <p class="bold type__white">And in order to address the challenges of our generation, it needs you to be <span class="italic">enthusiastic</span>, <span class="italic">empowered</span>, and <span class="italic">exceptional</span>.</p>
+        <p class="type__white">We know that you want to live a vibrant life <span class="italic">and</span> make an impact. So, to support you in realizing your highest potential, your organization is collaborating with eleven others to host a three-day leadership retreat designed to:</p>
         <ul class="intro__list">
           <li class="intro__list-item">
-            <img src="{{root}}assets/img/icon/tools/tools-outline-black.svg" alt="tools" class="icon--left icon__default">
+            <img src="{{root}}assets/img/icon/tools/tools-outline-white.svg" alt="tools" class="icon--left icon__large">
             <span class="icon__text">Give you specific <span class="type__bold">tools</span> and <span class="type__bold">practices</span> for unleashing community and impact.</span>
           </li>
           <li class="intro__list-item">
-            <img src="{{root}}assets/img/icon/friendship/friendship-outline-black.svg" alt="friends" class="icon--left icon__default">
+            <img src="{{root}}assets/img/icon/friendship/friendship-outline-white.svg" alt="friends" class="icon--left icon__large">
             <span class="icon__text">Create <span class="type__bold">lasting friendships</span> with conscious, community-minded students.</span></li>
           <li class="intro__list-item">
-            <img src="{{root}}assets/img/icon/lightbulb/lightbulb-outline-black.svg" alt="lightbulb" class="icon--left icon__default">
+            <img src="{{root}}assets/img/icon/lightbulb/lightbulb-outline-white.svg" alt="lightbulb" class="icon--left icon__large">
             <span class="icon__text"><span class="type__bold">Inspire</span> you, <span class="type__bold">connect</span> you, and <span class="type__bold">sustain</span> you in your personal leadership journey.</span></li>
         </ul>
-        <p>Meet and share with other college-aged leaders from across the country to level up your leadership, strengthen your interpersonal and team-building skills, and help catalyze your vibrant and supportive changemaker community.</p>
+        <p class="type__white">Meet and share with other college-aged leaders from across the country to level up your leadership, strengthen your interpersonal and team-building skills, and help catalyze your vibrant and supportive changemaker community.</p>
       </div>
     </div>
+  </div>
+</section>
+<section class="section section__directory angle--both-left-left">
+  <div class="grid-container">
+  <div class="grid-x grid-margin-x">
+    <div class="small-12 medium-6 cell highlight highlight__program">
+      <h2 class="subhead primary  highlight__subhead">Level up your leadership</h2>
+      <p class="highlight__description">Take the stage at Catalyst 2018.</p>
+      <a href="/program.html" class="primary__button hollow button highlight__button">Tell Me How</a>
+    </div>
+    <div class="small-12 medium-6 cell highlight hollow highlight__about">
+      <img src="{{root}}assets/img/logo/cyc-logo-square.svg" alt="logo" class="highlight__icon">
+      <p class="highlight__description">Peek behind the scenes of a revolutionary community: The Crew Youth Collaborative.</p>
+      <a href="/about.html" class="primary__button hollow button highlight__button">Crew Who?</a>
+    </div>
+    <div class="small-12 medium-6 cell highlight highlight__schedule">
+      <img src="{{root}}assets/img/icon/adventure/adventure-single.svg" class="highlight__icon">
+      <p class="highlight__description">Wondering what to expect during your leadership journey?</p>
+      <a href="/schedule.html" class="primary__button hollow button highlight__button">View the schedule</a>
+    </div>
+    <div class="small-12 medium-6 cell highlight highlight__faq">
+      <h2 class="subhead primary  highlight__subhead">Questions?</h2>
+      <a href="/faq.html" class="primary__button hollow button highlight__button">Check out our FAQ</a>
+  </div>
+  </div>
   </div>
 </section>
 <section class="section section__crewmembers">
@@ -44,7 +69,7 @@
         <h4 class="headline crewmember__headline">Catalyst 2018 is a gathering for members of these organizations:</h4>
       </div>
     </div>
-    <div class="grid-x grid-padding-x small-up-4 medium-up-6">
+    <div class="grid-x grid-padding-x small-up-3 medium-up-4 large-up-6">
        {{#each crewmember as | crewmember i| }}
        <div class="cell">
          <div class="crewmember-logo">

@@ -125,7 +125,10 @@
     "title": "Movement of Youth",
     "registration": "/registration-form.html",
     "participation": true,
-    "about": false
+    "about": true,
+    "roots": "As an organization built by students for students, Movement of Youth (MOY) empowers youth to lead and succeed in the 21st Century through mentoring and targeted enrichment activities led by college students.",
+    "motivation": "MOY is motivated by our tagline: Enrich, Engage, Empower. Engage: We take an active role in helping youth engage in relationships that foster growth. Enrich: We support youth-centered enrichment opportunities that encourage youth to strive for excellence. Enrich: We support youth-centered enrichment opportunities that encourage youth to strive for excellence.",
+    "youth": "In addition to the several opportunities MOY exposes middle and high-school students to, MOY provides professional development opportunities to college students by empowering them to make a tangible impact on their campuses and in the lives of others by operating local MOY sites. A MOY Site is comprised of a group of highly influential college students (undergraduate) that work together in partnership with teachers, counselors, administrators, and families to ensure all students are college and career ready."
   },
   {
     "member": "cofed",
@@ -156,5 +159,13 @@
     "roots": "As it often is with big ideas that have the power to change the world, Eye to Eye happened almost by accident. In 1998, a group of college students with learning and attention issues from Brown University sat down with similarly-labeled elementary school students from Fox Point Elementary in Providence, RI. The Brown students called themselves Project Eye-to-Eye, the name for their public service project. The program had one simple goal: give these younger students hope.",
     "motivation": "Create a world in which people with Learning Differences and ADHD are fully accepted, valued, and respected -- not just by society, but also by themselves.",
     "youth": "Youth will always be the cornerstone of our organization. Our Mentors are college and high school students with language/math based learning disabilities and/or ADHD. We empower students to empower each other."
+  },
+  {
+    "member": "seed",
+    "url": "http://www.seedabetterchina.org/",
+    "title": "Seed",
+    "registration": "/registration-form-seed.html",
+    "participation": true,
+    "about": false
   }
 ]

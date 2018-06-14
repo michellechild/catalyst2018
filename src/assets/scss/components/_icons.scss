@@ -24,8 +24,8 @@
 
 .member-logo {
   width: 100%;
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 125px;
+  max-height: 125px;
   margin: 0 auto;
   opacity: 0.9;
   transition: 300ms ease all;
@@ -36,11 +36,24 @@
 }
 
 .program__icon {
-  width: 32px;
+  width: 24px;
 }
 
 .skill__icon {
   width: 60px;
   height: 60px;
   margin-right: 2rem;
+}
+
+.cataylst__icon {
+  float: right;
+  margin-left: 1rem;
+  width: 100%;
+  max-width: 150px;
+}
+
+
+.intro__icon img {
+  width: 100%;
+  max-width: 200px;
 }

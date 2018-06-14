@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="416px" height="354px" viewBox="0 0 416 354" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>program-bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.200000018">
+        <g id="Home" transform="translate(-70.000000, -999.000000)" fill="#001218" fill-rule="nonzero">
+            <g id="schedule" transform="translate(0.000000, 911.000000)">
+                <g id="Group-7" transform="translate(70.000000, 88.000000)">
+                    <g id="program-bg">
+                        <path d="M39,68 L39,190.535789 L352.691619,68 L39,68 Z M355.251619,67 L357.811619,67 L357.824531,67.0685427 L355.44,68 L352.691619,68 L355.251619,67 Z M38,67 L358,67 L38,192 L38,67 Z" id="Rectangle-5"></path>
+                        <path d="M451.661189,94.0579085 L135.707165,260.401304 L451.661189,260.401304 L451.661189,94.0579085 Z M135.707165,260.401304 L133.807757,261.401304 L131.908348,261.401304 L131.87989,261.286163 L133.560597,260.401304 L135.707165,260.401304 Z M452.661189,92.4013044 L452.661189,261.401304 L131.661189,261.401304 L452.661189,92.4013044 Z" id="Rectangle-5-Copy" transform="translate(292.161189, 176.901304) rotate(-75.000000) translate(-292.161189, -176.901304) "></path>
+                        <path d="M-71.9540243,277 L244,277 L244,110.656604 L-71.9540243,277 Z M245,109 L245,278 L-76,278 L245,109 Z" id="Rectangle-5-Copy" transform="translate(84.500000, 193.500000) rotate(-270.000000) translate(-84.500000, -193.500000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

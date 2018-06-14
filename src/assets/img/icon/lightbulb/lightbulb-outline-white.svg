@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="22px" viewBox="0 0 13 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/lightbulb/lightbulb-outline-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Home-Splash-Page-edits" transform="translate(-160.000000, -809.000000)" stroke="#FFFFFF" stroke-width="0.5">
+            <g id="program" transform="translate(0.000000, 473.000000)">
+                <g id="3-things" transform="translate(145.000000, 262.000000)">
+                    <g id="lightbubl" transform="translate(16.000000, 72.000000)">
+                        <g id="icon/lightbulb/lightbulb-outline-white" transform="translate(0.000000, 3.000000)">
+                            <path d="M10.94625,7.77725 C11.22165,7.11515 11.37495,6.3876 11.37495,5.6249 C11.373975,2.5184 8.85645,-9.975e-05 5.74995,-9.975e-05 C2.64345,-9.975e-05 0.12495,2.5184 0.12495,5.6249 C0.12495,6.3876 0.27827,7.115125 0.55365,7.77725 C0.5546275,7.77725 2.923775,13.5 2.923775,13.5 L5.750025,13.5 L8.576275,13.5 L10.9464,7.77725 L10.94625,7.77725 Z" id="Stroke-1"></path>
+                            <polygon id="Stroke-2" points="2.92375 13.5 8.575 13.5 8.575 15.167 2.92375 15.167"></polygon>
+                            <polygon id="Stroke-3" points="2.92375 15.168 8.575 15.168 8.575 16.835975 2.92375 16.835975"></polygon>
+                            <polygon id="Stroke-4" points="2.92375 16.835 8.575 16.835 8.575 18.50005 2.92375 18.50005"></polygon>
+                            <polygon id="Stroke-5" points="7 20 4.5 20 3.875 18.5 7.625 18.5"></polygon>
+                            <polygon id="Stroke-6" points="5.749 13.5 6.999975 9.5625 4.499975 9.5625 5.749 5.625 4.499975 9.5625 6.999975 9.5625"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,22 +1,27 @@
 .about__link {
   display: flex;
   flex-direction: column;
-  margin: 2rem 0 1rem 0;
+  margin: 2rem 0;
 }
 
-.about__title {
-  color: $dark-gray;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 1.5rem;
-}
+// .about__title {
+//   color: $dark-gray;
+//   text-align: center;
+//   text-transform: uppercase;
+//   font-weight: 600;
+//   font-size: rem-calc(20);
+//   letter-spacing: 2px;
+//   margin-top: 1rem;
+// }
 
 @mixin about-color($color){
-  .about__title {
+
+  .accordion-title {
     color: $color;
   }
+
   .accordion-title:hover, .accordion-title:focus {
-    color: $color;
+    font-weight: 600;
   }
 }
 
@@ -42,6 +47,10 @@
 
 .about__euphrates {
   @include about-color(#3d9fdc);
+}
+
+.about__movementofyouth {
+  @include about-color(#d6539f);
 }
 
 .faq__headline {
@@ -90,13 +99,17 @@
 
 .program__header {
   margin-bottom: 2rem;
-  font-weight: 600;
-  @include hide-for-only(small);;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+   opacity: 0.5;
+   font-weight: 600;
+   font-size: rem-calc(18);
+  // @include hide-for-only(small);;
 }
 
 .program__panel {
   @include breakpoint(medium) {
-    max-height: 400px;
+    max-height: 600px;
     overflow-y: scroll;
   }
 }
@@ -117,11 +130,4 @@ a.program__link {
 
 .program__nav-container {
    border-right: 1px solid $light-gray;
-}
-
-.cataylst__icon {
-  float: right;
-  margin-left: 1rem;
-  width: 100%;
-  max-width: 150px;
 }

@@ -1,15 +1,19 @@
-<header class="{{#unlesspage 'index' 'splash'}}header__main{{/unlesspage}}">
+<div class="title-bar hide-for-medium">
+  <a class="logo"><img src="{{root}}assets/img/logo/cyc-logo-full-color.svg" alt="Logo"></a>
+  <button type="button" class="button small brand-blue title-bar__button" data-toggle="nav__mobile">Menu</button>
+</div>
+<header class="{{#unlesspage 'index' 'splash'}}header__main{{/unlesspage}} hide-for-small-only">
   <div class="grid-x grid-margin-x">
     <div class="small-12 cell">
         <ul class="menu">
           <li class="logo"><a href="/index.html">
             {{#ifpage 'index' 'splash'}}<img src="{{root}}assets/img/logo/cyc-logo-white.svg" alt="Logo">{{/ifpage}}
             {{#unlesspage 'index' 'splash'}}<img src="{{root}}assets/img/logo/cyc-logo-full-color.svg" alt="Logo">{{/unlesspage}}</a></li>
-          <li><a href="/index.html" class="subhead menu__link">Home</a></li>
-          <li><a href="/about.html" class="subhead menu__link">About</a></li>
-          <li><a href="/program.html" class="subhead menu__link">Program</a></li>
-          <li><a href="/schedule.html" class="subhead menu__link">Schedule</a></li>
-          <li><a href="/faq.html" class="subhead menu__link">FAQ</a></li>
+          <li><a href="/index.html" class="subhead menu__link{{#ifpage 'index'}}--white{{/ifpage}}">Home</a></li>
+          <li><a href="/about.html" class="subhead menu__link{{#ifpage 'index'}}--white{{/ifpage}}">About</a></li>
+          <li><a href="/program.html" class="subhead menu__link{{#ifpage 'index'}}--white{{/ifpage}}">Program</a></li>
+          <li><a href="/schedule.html" class="subhead menu__link{{#ifpage 'index'}}--white{{/ifpage}}">Schedule</a></li>
+          <li><a href="/faq.html" class="subhead menu__link{{#ifpage 'index'}}--white{{/ifpage}}">FAQ</a></li>
           <li><a class="button primary__button" href="/register-organization.html"><span class="subhead type__white">Register</span></a></li>
         </ul>
     </div>

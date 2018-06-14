@@ -21,6 +21,19 @@ body {
   padding: rem-calc(50px) 0;
 }
 
+.nav-mobile {
+  padding: 1rem 0;
+
+  li {
+    font-weight: bold;
+  }
+
+  .button {
+    display: inline-block;
+    margin-top: 0.5rem;
+  }
+}
+
 
 footer {
   background-color: $black;
@@ -39,10 +52,31 @@ footer {
 //Intro
 
 .section__intro {
-  background-color: $light-gray;
+  background-color: $black;
+  margin-top: -7vw;
+  padding: 7rem 0;
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  p:first-of-type {
+   font-size: rem-calc(21);
+ }
+
+   p, li {
+    font-size: rem-calc(18);
+  }
+}
+
+.intro__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .intro__list {
+  color: $white;
   list-style-type: none;
   margin-left: 0;
 }
@@ -53,6 +87,58 @@ footer {
   margin-bottom: 1rem;
 }
 
+//Directory
+
+.section__directory {
+  background-color: $light-gray;
+  margin-top: -7vw;
+  padding: 7rem 0;
+}
+
+.highlight {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.highlight__button {
+  margin: 0 auto;
+}
+
+.highlight__subhead {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.highlight__icon {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.highlight__description {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  font-size: rem-calc(18);
+  text-align: center;
+  max-width: 400px;
+}
+
+.highlight__program {
+  background: url('../img/program-bg.svg') center center no-repeat;
+  background-size: contain;
+}
+
+.highlight__faq {
+  background: url('../img/faq-bg.svg') center center no-repeat;
+  background-size: contain;
+}
+
+
 //Crewmember
 
 .crewmember__headline {
@@ -61,7 +147,7 @@ footer {
 
 .crewmember-logo {
     border: none;
-    margin: 1rem;
+    margin: 2rem 1rem;
     display: flex;
     justify-content: center;
 }

@@ -3,10 +3,10 @@
     <div class="grid-x">
       <div class="small-12 cell">
         <div class="hero__content">
-          <img src="{{root}}assets/img/icon/system/system.svg" alt="System" class="hero__icon">
-          <h1 class="display">Crew 2030 Youth Collaborative</h1>
-          <p class="headline">a community of changemakers</p>
-          <p class="hero__description">We’re a vibrant, growing community of shared programs, principles, values, and a platform, the Crew Youth Collaborative is amplifying the engagement of 13,000 youth in over 600 communities across 45 countries.</p>
+          <img src="{{root}}assets/img/icon/system/system.svg" alt="System" class="hero__icon animate-in">
+          <h1 class="display animate-in">Crew 2030 Youth Collaborative</h1>
+          <h5 class="headline animate-in">a community of changemakers</h5>
+          <p class="hero__description animate-in">We’re a vibrant, growing community of shared programs, principles, values, and a platform, the Crew Youth Collaborative is amplifying the engagement of 13,000 youth in over 600 communities across 45 countries.</p>
         </div>
       </div>
     </div>
@@ -14,13 +14,13 @@
 </section>
 <section class="section__about">
   <div class="grid-container">
-    <div class="grid-x grid-margin-x medium-up-2">
+    <div class="grid-x grid-margin-x medium-up-3">
      {{#each crewmember as | crewmember i| }}
        {{#if crewmember.about}}
          <div class="cell about__{{crewmember.member}}">
           <a href="{{crewmember.url}}" target="_blank" class="about__link">
             <img src="../assets/img/logo/{{crewmember.member}}.png" class="member-logo" alt="{{crewmember.member}}">
-            <h4 class="about__title">{{crewmember.title}}</h4>
+            <!-- <h4 class="about__title">{{crewmember.title}}</h4> -->
           </a>
           <ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
               <li class="accordion-item" data-accordion-item>

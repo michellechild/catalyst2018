@@ -12,10 +12,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  h1, h4 {
+    margin-bottom: 1rem;
+  }
 }
 
 .hero__index {
-  background: url('../img/geometricbackground.png') center center no-repeat;
+  background: url('../img/geometricbackground.png') center center no-repeat get-color(brand-blue);
   background-size: cover;
   width: 100%;
   overflow-x: hidden;
@@ -24,9 +28,14 @@
   text-align: center;
 
   .hero__content {
-    padding: 6.25rem 0;
+    padding: 6rem 0;
+
+    @include breakpoint(medium) {
+      padding: 19vh 0;
+    }
   }
 }
+
 
 .hero__faq {
   flex-direction: row;
@@ -39,7 +48,7 @@
 .hero__description {
   max-width: 600px;
   text-align: center;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 .logo {
@@ -97,7 +106,6 @@
     @include background-left(get-color(brand-purple), darken(get-color(brand-purple), 15%));
   }
 }
-
 
 .hero__program {
 
