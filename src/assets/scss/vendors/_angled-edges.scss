@@ -1,165 +1,212 @@
-
-// $angle: The angle in degrees: 1 - 45
-// $angle-position-y: The Y position of the angle: top | bottom | both
-// $angle-position-x: The X position of the angle: left | right
-// $angle-position-bottom-x: The X position of the bottom angle if using 'both' for $angle-position-y: left | right
-// $fallback: Create a fallback for older browsers: true | false
-// $fallback-color: Fallback colour for older browsers: Hex color
-
-@mixin angle-edge($angle, $angle-position-y, $angle-position-x, $angle-position-bottom-x: '', $fallback: true, $fallback-color: #fff) {
-
+.angle--top-left {
   position: relative;
   overflow: hidden;
-
-  // Converts degrees to VW, 100vw = 45deg using this technique
-  @if $angle > 45 {
-    $angle: 0;
-    @error 'Invalid angle, it must be between 1-45';
-  }
-  @if $angle < 46 {
-    $angle: convertDegToVW($angle);
-  }
-
-  @if $angle-position-bottom-x == '' {
-    $angle-position-bottom-x: $angle-position-x;
-  }
-
-  $angle-calc-top: calc(0% + #{$angle}vw);
-  $angle-calc-bottom: calc(100% - #{$angle}vw);
-
-  $clip-path-top: 0 0, 100% 0;
-  $clip-path-bottom: 100% 100%, 0 100%;
-
-  $border-width-top: '';
-  $border-width-bottom: '';
-  $border-color-top: '';
-  $border-color-bottom: '';
-
-
-  @if $angle-position-y == 'top' or $angle-position-y == 'both' {
-
-    @if $angle-position-x == 'left' {
-      $clip-path-top: 0 $angle-calc-top, 100% 0;
-
-      $border-width-top: #{$angle + 1}vw 100vw 0 0;
-    }
-
-    @if $angle-position-x == 'right' {
-      $clip-path-top: 0 0, 100% $angle-calc-top;
-
-      $border-width-top: #{$angle + 1}vw 0 0 100vw;
-    }
-
-    $border-color-top: $fallback-color transparent transparent transparent;
-  }
-
-
-  @if $angle-position-y == 'bottom' or $angle-position-y == 'both' {
-
-    @if $angle-position-y == 'both' and $angle-position-x != $angle-position-bottom-x {
-      $angle-position-x: $angle-position-bottom-x;
-    }
-
-    @if $angle-position-x == 'left' {
-      $clip-path-bottom: 100% 100%, 0 $angle-calc-bottom;
-
-      $border-width-bottom: 0 100vw #{$angle + 1}vw 0;
-    }
-
-    @if $angle-position-x == 'right' {
-      $clip-path-bottom: 100% $angle-calc-bottom, 0 100%;
-
-      $border-width-bottom: 0 0 #{$angle + 1}vw 100vw;
-    }
-
-    $border-color-bottom: transparent transparent $fallback-color transparent;
-  }
-
-  $clip-path: polygon($clip-path-top, $clip-path-bottom);
-  clip-path: $clip-path;
-
-
-  // Fallback for clip-path with solid colours
-  @if $fallback {
-
-    @supports not (clip-path: $clip-path) {
-
-      &::before, &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        z-index: 10;
-        display: block;
-        border-style: solid;
-      }
-
-      @if $angle-position-y == 'top' or $angle-position-y == 'both' {
-        &::before {
-          top: 0;
-          border-width: $border-width-top;
-          border-color: $border-color-top;
-        }
-      }
-
-      @if $angle-position-y == 'bottom' or $angle-position-y == 'both' {
-        &::after {
-          bottom: 0;
-          border-width: $border-width-bottom;
-          border-color: $border-color-bottom;
-        }
-      }
-
-    }
-
-  }
-
+  -webkit-clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% 100%, 0 100%);
 }
 
-// Converts degrees to VW, 100vw = 45deg using this technique
-@function convertDegToVW($angle){
-  @return round($angle*2.22);
-}
-
-
-// Classes
-.angle--top-left {
-  @include angle-edge($angle: 3, $angle-position-y: 'top', $angle-position-x: 'left');
+@supports not ((-webkit-clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% 100%, 0 100%)) or (clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% 100%, 0 100%))) {
+  .angle--top-left::before, .angle--top-left::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    display: block;
+    border-style: solid;
+  }
+  .angle--top-left::before {
+    top: 0;
+    border-width: 8vw 100vw 0 0;
+    border-color: #fff transparent transparent transparent;
+  }
 }
 
 .angle--top-right {
-  @include angle-edge($angle: 3, $angle-position-y: 'top', $angle-position-x: 'right');
+  position: relative;
+  overflow: hidden;
+  -webkit-clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% 100%, 0 100%);
+}
+
+@supports not ((-webkit-clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% 100%, 0 100%)) or (clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% 100%, 0 100%))) {
+  .angle--top-right::before, .angle--top-right::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    display: block;
+    border-style: solid;
+  }
+  .angle--top-right::before {
+    top: 0;
+    border-width: 8vw 0 0 100vw;
+    border-color: #fff transparent transparent transparent;
+  }
 }
 
 .angle--bottom-left {
-  @include angle-edge($angle: 3, $angle-position-y: 'bottom', $angle-position-x: 'left');
+  position: relative;
+  overflow: hidden;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 7vw));
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 7vw));
+}
+
+@supports not ((-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 7vw))) or (clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 7vw)))) {
+  .angle--bottom-left::before, .angle--bottom-left::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    display: block;
+    border-style: solid;
+  }
+  .angle--bottom-left::after {
+    bottom: 0;
+    border-width: 0 100vw 8vw 0;
+    border-color: transparent transparent #fff transparent;
+  }
 }
 
 .angle--bottom-right {
-  @include angle-edge($angle: 3, $angle-position-y: 'bottom', $angle-position-x: 'right');
+  position: relative;
+  overflow: hidden;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7vw), 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7vw), 0 100%);
+}
+
+@supports not ((-webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7vw), 0 100%)) or (clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7vw), 0 100%))) {
+  .angle--bottom-right::before, .angle--bottom-right::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    display: block;
+    border-style: solid;
+  }
+  .angle--bottom-right::after {
+    bottom: 0;
+    border-width: 0 0 8vw 100vw;
+    border-color: transparent transparent #fff transparent;
+  }
 }
 
 .angle--both-left-left {
-  @include angle-edge($angle: 3, $angle-position-y: 'both', $angle-position-x: 'left');
+  position: relative;
+  overflow: hidden;
+  -webkit-clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% 100%, 0 calc(100% - 7vw));
+          clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% 100%, 0 calc(100% - 7vw));
+}
+
+@supports not ((-webkit-clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% 100%, 0 calc(100% - 7vw))) or (clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% 100%, 0 calc(100% - 7vw)))) {
+  .angle--both-left-left::before, .angle--both-left-left::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    display: block;
+    border-style: solid;
+  }
+  .angle--both-left-left::before {
+    top: 0;
+    border-width: 8vw 100vw 0 0;
+    border-color: #fff transparent transparent transparent;
+  }
+  .angle--both-left-left::after {
+    bottom: 0;
+    border-width: 0 100vw 8vw 0;
+    border-color: transparent transparent #fff transparent;
+  }
 }
 
 .angle--both-right-right {
-  @include angle-edge($angle: 3, $angle-position-y: 'both', $angle-position-x: 'right');
+  position: relative;
+  overflow: hidden;
+  -webkit-clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% calc(100% - 7vw), 0 100%);
+          clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% calc(100% - 7vw), 0 100%);
+}
+
+@supports not ((-webkit-clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% calc(100% - 7vw), 0 100%)) or (clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% calc(100% - 7vw), 0 100%))) {
+  .angle--both-right-right::before, .angle--both-right-right::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    display: block;
+    border-style: solid;
+  }
+  .angle--both-right-right::before {
+    top: 0;
+    border-width: 8vw 0 0 100vw;
+    border-color: #fff transparent transparent transparent;
+  }
+  .angle--both-right-right::after {
+    bottom: 0;
+    border-width: 0 0 8vw 100vw;
+    border-color: transparent transparent #fff transparent;
+  }
 }
 
 .angle--both-left-right {
-  @include angle-edge($angle: 3, $angle-position-y: 'both', $angle-position-x: 'left', $angle-position-bottom-x: 'right');
+  position: relative;
+  overflow: hidden;
+  -webkit-clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% calc(100% - 7vw), 0 100%);
+          clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% calc(100% - 7vw), 0 100%);
+}
+
+@supports not ((-webkit-clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% calc(100% - 7vw), 0 100%)) or (clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% calc(100% - 7vw), 0 100%))) {
+  .angle--both-left-right::before, .angle--both-left-right::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    display: block;
+    border-style: solid;
+  }
+  .angle--both-left-right::before {
+    top: 0;
+    border-width: 8vw 100vw 0 0;
+    border-color: #fff transparent transparent transparent;
+  }
+  .angle--both-left-right::after {
+    bottom: 0;
+    border-width: 0 0 8vw 100vw;
+    border-color: transparent transparent #fff transparent;
+  }
 }
 
 .angle--both-right-left {
-  @include angle-edge($angle: 3, $angle-position-y: 'both', $angle-position-x: 'right', $angle-position-bottom-x: 'left');
+  position: relative;
+  overflow: hidden;
+  -webkit-clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% 100%, 0 calc(100% - 7vw));
+          clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% 100%, 0 calc(100% - 7vw));
 }
 
-
-  .angle__content {
+@supports not ((-webkit-clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% 100%, 0 calc(100% - 7vw))) or (clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% 100%, 0 calc(100% - 7vw)))) {
+  .angle--both-right-left::before, .angle--both-right-left::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: 10;
     display: block;
-    width: 100%;
-    height: auto;
+    border-style: solid;
   }
+  .angle--both-right-left::before {
+    top: 0;
+    border-width: 8vw 0 0 100vw;
+    border-color: #fff transparent transparent transparent;
+  }
+  .angle--both-right-left::after {
+    bottom: 0;
+    border-width: 0 100vw 8vw 0;
+    border-color: transparent transparent #fff transparent;
+  }
+}
+
+.angle__content {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 .angle--colour {
   color: #fff;
