@@ -1,0 +1,16 @@
+---
+layout: registration
+---
+
+{{#each crewmember as |crewmember i|}}
+  {{#ifequal crewmember.member 'euphrates'}}
+  <div class="grid-x grid-margin-x registration-customization">
+    <div class="cell small-12 register__logo">
+      <img src="{{root}}assets/img/logo/{{crewmember.member}}.png" class="member-logo">
+    </div>
+    <div class="cell small-12">
+      <p class="org__description">Registration for Catalyst 2018 is $200, which includes ground transportation to and from airport, lodging, food, and training fees. This is an amazing opportunity at an incredible price!</p>
+    </div>
+  </div>
+  {{/ifequal}}
+{{/each}}
