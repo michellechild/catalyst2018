@@ -1,11 +1,11 @@
 .angle--top-left {
   position: relative;
   overflow: hidden;
-  -webkit-clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 calc(#{0%} + 7vw), 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 calc(#{0%} + 7vw), 100% 0, 100% 100%, 0 100%);
 }
 
-@supports not ((-webkit-clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% 100%, 0 100%)) or (clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% 100%, 0 100%))) {
+@supports not ((-webkit-clip-path: polygon(0 calc(#{0%} + 7vw), 100% 0, 100% 100%, 0 100%)) or (clip-path: polygon(0 calc(#{0%} + 7vw), 100% 0, 100% 100%, 0 100%))) {
   .angle--top-left::before, .angle--top-left::after {
     content: "";
     position: absolute;
@@ -24,11 +24,11 @@
 .angle--top-right {
   position: relative;
   overflow: hidden;
-  -webkit-clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% calc(#{0%} + 7vw), 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% calc(#{0%} + 7vw), 100% 100%, 0 100%);
 }
 
-@supports not ((-webkit-clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% 100%, 0 100%)) or (clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% 100%, 0 100%))) {
+@supports not ((-webkit-clip-path: polygon(0 0, 100% calc(#{0%} + 7vw), 100% 100%, 0 100%)) or (clip-path: polygon(0 0, 100% calc(#{0%} + 7vw), 100% 100%, 0 100%))) {
   .angle--top-right::before, .angle--top-right::after {
     content: "";
     position: absolute;
@@ -93,11 +93,11 @@
 .angle--both-left-left {
   position: relative;
   overflow: hidden;
-  -webkit-clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% 100%, 0 calc(100% - 7vw));
-          clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% 100%, 0 calc(100% - 7vw));
+  -webkit-clip-path: polygon(0 calc(#{0%} + 7vw), 100% 0, 100% 100%, 0 calc(100% - 7vw));
+          clip-path: polygon(0 calc(#{0%} + 7vw), 100% 0, 100% 100%, 0 calc(100% - 7vw));
 }
 
-@supports not ((-webkit-clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% 100%, 0 calc(100% - 7vw))) or (clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% 100%, 0 calc(100% - 7vw)))) {
+@supports not ((-webkit-clip-path: polygon(0 calc(#{0%} + 7vw), 100% 0, 100% 100%, 0 calc(100% - 7vw))) or (clip-path: polygon(0 calc(#{0%} + 7vw), 100% 0, 100% 100%, 0 calc(100% - 7vw)))) {
   .angle--both-left-left::before, .angle--both-left-left::after {
     content: "";
     position: absolute;
@@ -121,11 +121,11 @@
 .angle--both-right-right {
   position: relative;
   overflow: hidden;
-  -webkit-clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% calc(100% - 7vw), 0 100%);
-          clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% calc(100% - 7vw), 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% calc(#{0%} + 7vw), 100% calc(100% - 7vw), 0 100%);
+          clip-path: polygon(0 0, 100% calc(#{0%} + 7vw), 100% calc(100% - 7vw), 0 100%);
 }
 
-@supports not ((-webkit-clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% calc(100% - 7vw), 0 100%)) or (clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% calc(100% - 7vw), 0 100%))) {
+@supports not ((-webkit-clip-path: polygon(0 0, 100% calc(#{0%} + 7vw), 100% calc(100% - 7vw), 0 100%)) or (clip-path: polygon(0 0, 100% calc(#{0%} + 7vw), 100% calc(100% - 7vw), 0 100%))) {
   .angle--both-right-right::before, .angle--both-right-right::after {
     content: "";
     position: absolute;
@@ -149,11 +149,11 @@
 .angle--both-left-right {
   position: relative;
   overflow: hidden;
-  -webkit-clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% calc(100% - 7vw), 0 100%);
-          clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% calc(100% - 7vw), 0 100%);
+  -webkit-clip-path: polygon(0 calc(#{0%} + 7vw), 100% 0, 100% calc(100% - 7vw), 0 100%);
+          clip-path: polygon(0 calc(#{0%} + 7vw), 100% 0, 100% calc(100% - 7vw), 0 100%);
 }
 
-@supports not ((-webkit-clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% calc(100% - 7vw), 0 100%)) or (clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% calc(100% - 7vw), 0 100%))) {
+@supports not ((-webkit-clip-path: polygon(0 calc(#{0%} + 7vw), 100% 0, 100% calc(100% - 7vw), 0 100%)) or (clip-path: polygon(0 calc(#{0%} + 7vw), 100% 0, 100% calc(100% - 7vw), 0 100%))) {
   .angle--both-left-right::before, .angle--both-left-right::after {
     content: "";
     position: absolute;
@@ -177,11 +177,11 @@
 .angle--both-right-left {
   position: relative;
   overflow: hidden;
-  -webkit-clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% 100%, 0 calc(100% - 7vw));
-          clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% 100%, 0 calc(100% - 7vw));
+  -webkit-clip-path: polygon(0 0, 100% calc(#{0%} + 7vw), 100% 100%, 0 calc(100% - 7vw));
+          clip-path: polygon(0 0, 100% calc(#{0%} + 7vw), 100% 100%, 0 calc(100% - 7vw));
 }
 
-@supports not ((-webkit-clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% 100%, 0 calc(100% - 7vw))) or (clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% 100%, 0 calc(100% - 7vw)))) {
+@supports not ((-webkit-clip-path: polygon(0 0, 100% calc(#{0%} + 7vw), 100% 100%, 0 calc(100% - 7vw))) or (clip-path: polygon(0 0, 100% calc(#{0%} + 7vw), 100% 100%, 0 calc(100% - 7vw)))) {
   .angle--both-right-left::before, .angle--both-right-left::after {
     content: "";
     position: absolute;
