@@ -15,13 +15,69 @@
     <div class="grid-x">
       <div class="small-12 cell">
         <ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+
           {{#each faq as |faq i|}}
-          <li class="accordion-item faq__item" data-accordion-item>
+            {{#ifequal faq.question 'What is the Crew Youth Collaborative?'}}
+            <li class="accordion-item faq__item" data-accordion-item>
+              <a href="#" class="accordion-title faq__title">{{faq.question}}</a>
+              <div class="accordion-content faq__content" data-tab-content>
+                <p class="accordion__text">The Crew Youth Collaborative is a coalition of organizations mobilizing college-age youth to take action for a thriving world in their communities and on the Crew Platform. You can read more about what the collaborative is and about the grant organization, Enlight, <a href="https://enlightcollaborative.org/crew-youth-collaborative/">here</a>.</p>
+              </div>
+            </li>
+
+            {{else ifequal faq.question 'Where will the Catalyst 2018 retreat be hosted?'}}
+            <li class="accordion-item faq__item" data-accordion-item>
             <a href="#" class="accordion-title faq__title">{{faq.question}}</a>
             <div class="accordion-content faq__content" data-tab-content>
-              <p class="accordion__text">{{faq.answer}}</p>
+            <p class="accordion__text">Catalyst 2018 will be hosted in Bryn Athyn, PA at <a href="http://www.brynathyn.edu/">Bryn Athyn College.</a></p>
             </div>
-           </li>
+            </li>
+
+            {{else ifequal faq.question 'How do I travel to Catalyst 2018?'}}
+            <li class="accordion-item faq__item" data-accordion-item>
+            <a href="#" class="accordion-title faq__title">{{faq.question}}</a>
+            <div class="accordion-content faq__content" data-tab-content>
+            <p class="accordion__text">{{faq.answer}}</p>
+            <p class="accordion__text">If taking a train, bus, or airplan to Philadelphia, we will be coordinating Lyft rides for you from the train/bus station or airport. We just need you to submit your <a href="https://docs.google.com/forms/d/1rl3Go4Rv30hqYOwr0Hvaq0VI_rRE6iYwoSFIkaVMfko/edit"></a>travel itinerary</a> by July 20, and then someone from our logistics team will follow up with you.</p>
+            <p>If you have any questions, please email <a href="mailto:support@catalyst2018.org">support@catalyst2018.org.</a></p>
+            </div>
+            </li>
+
+            {{else ifequal faq.question 'How do I travel to Catalyst 2018?'}}
+            <li class="accordion-item faq__item" data-accordion-item>
+            <a href="#" class="accordion-title faq__title">{{faq.question}}</a>
+            <div class="accordion-content faq__content" data-tab-content>
+             <p class="accordion__text">{{faq.answer}}</p>
+             <p class="accordion__text">If taking a train, bus, or airplan to Philadelphia, we will be coordinating Lyft rides for you from the train/bus station or airport. We just need you to submit your <a href="https://docs.google.com/forms/d/1rl3Go4Rv30hqYOwr0Hvaq0VI_rRE6iYwoSFIkaVMfko/edit"></a>travel itinerary</a> by July 20, and then someone from our logistics team will follow up with you.</p>
+             <p class="accordion__text">If you have any questions, please email <a href="mailto:support@catalyst2018.org">support@catalyst2018.org.</a></p>
+            </div>
+            </li>
+
+            {{else ifequal faq.question 'What will the accomodations be like?'}}
+            <li class="accordion-item faq__item" data-accordion-item>
+            <a href="#" class="accordion-title faq__title">{{faq.question}}</a>
+            <div class="accordion-content faq__content" data-tab-content>
+              <p class="accordion__text">Everyone attending Catalyst 2018 will be staying in suites that each sleep 5 people. A suite consists of 2 double rooms and a single room with a shared kitchen and living space. You will find out who you are staying with when you arrive. We do our best to place people from the same organizations together- however, you may also be given the opportunity to stay with members of other organizations. If you have any concerns about lodging please do not hesitate to contact your staff contact or email  <a href="mailto:support@catalyst2018.org">support@catalyst2018.org.</a>. We want to make sure that you feel safe and are comfortable with lodging. We will do our very best to address any special needs or concerns.</p>
+            </div>
+            </li>
+
+            {{else ifequal faq.question 'Can I bring outside food to the retreat?'}}
+            <li class="accordion-item faq__item" data-accordion-item>
+             <a href="#" class="accordion-title faq__title">{{faq.question}}</a>
+             <div class="accordion-content faq__content" data-tab-content>
+               <p class="accordion__text">Yes, you can. Breakfast, lunch, and dinner will be provided throughout the event, but if you would like to bring your own food and snacks you can store them in your suite’s kitchen. If you have special dietary considerations that require access to food outside of scheduled meal times, we would love to collaborate with you to ensure your needs are met, so please email <a href="mailto:support@catalyst2018.org">support@catalyst2018.org.</a> and we will connect with you!</p>
+             </div>
+            </li>
+
+            {{else}}
+            <li class="accordion-item faq__item" data-accordion-item>
+                    <a href="#" class="accordion-title faq__title">{{faq.question}}</a>
+                    <div class="accordion-content faq__content" data-tab-content>
+                      <p class="accordion__text">{{faq.answer}}</p>
+                      <p class="accordion__text">{{faq.answer-2}}</p>
+                    </div>
+                  </li>
+            {{/ifequal}}
            {{/each}}
          </ul>
       </div>
