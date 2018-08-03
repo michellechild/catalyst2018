@@ -24,6 +24,10 @@
     font-weight: 600;
   }
 }
+.about__juniorenterprise {
+  @include about-color(#2da2c8);
+}
+
 
 .about__feelgood {
   @include about-color(#70BA72);

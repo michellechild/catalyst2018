@@ -144,7 +144,7 @@
     "title": "Junior Enterprise",
     "registration": "/registration-form.html",
     "participation": true,
-    "about": false,
+    "about": true,
     "roots": "Junior Enterprise (JE) is a student-run, non-profit organization that provides services to medium and small local businesses. We were started 50 years ago in France and have spread all around the world. We provide unique entrepreneurial experience while benefiting the local community, Junior Entrepreneurs acquire essential soft and hard skills that are incredibly valuable in industry, empowering them to pursue successful and purposeful careers after graduation.",
     "motivation": "JE forms better conscious leaders out of college by giving members real entrepreneurial experience. By empowering Junior Entrepreneurs, we believe in enabling them to pursue their career dreams and make a greater impact wherever they choose to go after graduation.",
     "youth": "We are a completely student-run network. Every aspect is run by students and executed by students."

@@ -1,15 +1,18 @@
 @mixin track-type($color) {
-  color: $color;
-  font-weight: 600;
+
+  .timeline__title {
+    color: $color;
+  }
 
   .card-divider {
     background-color: $color;
     color: $white;
+    font-weight: 600;
   }
 }
 
 @mixin hour-interval($hour) {
-  height: 150px;
+  height: 200px;
 
   @include breakpoint(large) {
     height: calc((200px * #{$hour}) - 0.5rem);
@@ -73,7 +76,23 @@
       padding: 0.25rem 1rem;
     }
   }
+}
+.three-quarters-hour {
+  @include hour-interval(.75);
+}
 
+.quarter-break {
+  @include breakpoint(large) {
+    height: 50px;
+  }
+}
+
+.hour-quarter {
+  @include hour-interval(1.25);
+}
+
+.hour-three-quarters {
+  @include hour-interval(1.75);
 }
 
 .hour {
@@ -88,10 +107,40 @@
   @include hour-interval(2);
 }
 
+.two-hours-quarter {
+  @include hour-interval(2.25);
+}
+
 .two-hours-half {
   @include hour-interval(2.5);
 }
 
-.arrivals {
-  @include hour-interval(3.5);
+.timeline__description {
+  font-weight: 400;
+  font-size: rem-calc(14);
+  color: $black;
+  margin-top: 0.5rem;
+}
+
+.timeline__list {
+  margin-top: 0.5rem;
+
+  li {
+    font-size: rem-calc(14);
+  }
+
+  .timeline__description {
+    margin: 0;
+  }
+}
+
+.timeline__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-weight: 600;
+
+  p {
+    margin-bottom: 0;
+  }
 }

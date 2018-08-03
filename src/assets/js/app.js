@@ -11,7 +11,6 @@ import Foundation from 'foundation-sites';
 
 $(document).foundation();
 
-
 $('#chkdiscount').prop( "checked", true );
 $('#tickets_promocode').css( "display", "block" );
 

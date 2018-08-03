@@ -27,11 +27,15 @@
 }
 
 .card-section__timeline {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  p:not(.theme__title) {
-    margin-right: auto;
-    margin-bottom: 0;
-  }
+  padding-bottom: 0;
 }
+
+// .card-section__timeline {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+//   p:not(.theme__title) {
+//     margin-right: auto;
+//     margin-bottom: 0;
+//   }
+// }
