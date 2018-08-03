@@ -15,6 +15,13 @@
     box-shadow: 0 9px 30px 3px rgba(30,32,35,.26);
   }
 
+  + .quarter-break {
+    @include breakpoint(small only) {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
   + .card__timeline {
     margin-top: 2rem;
     margin-bottom: 2rem;
